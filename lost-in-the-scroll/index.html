@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blueprint | CROW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Workbench&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="background-layer"></div>
+    <canvas id="noise-overlay" aria-hidden="true"></canvas>
+    <div id="grid-overlay"></div>
+
+    <header class="fixed-header">
+        <div class="readout-container">
+            <div class="readout" id="readout-noise">
+                <span class="label">NOISE</span>
+                <span class="value">0.00</span>
+            </div>
+            <div class="readout" id="readout-frequency">
+                <span class="label">FREQUENCY</span>
+                <span class="value">0.00</span>
+            </div>
+            <div class="readout" id="readout-focus">
+                <span class="label">FOCUS</span>
+                <span class="value">SHARP</span>
+            </div>
+        </div>
+    </header>
+
+    <main id="scrolly-container">
+        <div class="scroll-trigger" aria-hidden="true"></div>
+
+        <div id="viewport-content">
+            <aside class="rf-meter-shell" aria-hidden="true">
+                <svg id="rfMeter" width="520" height="120" viewBox="0 0 520 120" role="img" aria-label="Radio frequency meter">
+                    <defs>
+                        <clipPath id="rfClip">
+                            <rect x="14" y="20" width="492" height="74" rx="12" />
+                        </clipPath>
+                        <linearGradient id="rfFade" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0" stop-color="currentColor" stop-opacity="0.10"/>
+                            <stop offset="0.5" stop-color="currentColor" stop-opacity="0.02"/>
+                            <stop offset="1" stop-color="currentColor" stop-opacity="0.10"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="10" y="16" width="500" height="82" rx="14" fill="none" stroke="currentColor" stroke-width="2" opacity="0.75"/>
+                    <rect x="14" y="20" width="492" height="74" rx="12" fill="url(#rfFade)" stroke="currentColor" stroke-width="1" opacity="0.35"/>
+                    <line x1="14" y1="82" x2="506" y2="82" stroke="currentColor" stroke-width="1" opacity="0.18"/>
+                    <g opacity="0.22">
+                        <line x1="50" y1="90" x2="50" y2="94" stroke="currentColor" />
+                        <line x1="90" y1="90" x2="90" y2="94" stroke="currentColor" />
+                        <line x1="130" y1="90" x2="130" y2="94" stroke="currentColor" />
+                        <line x1="170" y1="90" x2="170" y2="94" stroke="currentColor" />
+                        <line x1="210" y1="90" x2="210" y2="94" stroke="currentColor" />
+                        <line x1="250" y1="90" x2="250" y2="94" stroke="currentColor" />
+                        <line x1="290" y1="90" x2="290" y2="94" stroke="currentColor" />
+                        <line x1="330" y1="90" x2="330" y2="94" stroke="currentColor" />
+                        <line x1="370" y1="90" x2="370" y2="94" stroke="currentColor" />
+                        <line x1="410" y1="90" x2="410" y2="94" stroke="currentColor" />
+                        <line x1="450" y1="90" x2="450" y2="94" stroke="currentColor" />
+                        <line x1="490" y1="90" x2="490" y2="94" stroke="currentColor" />
+                    </g>
+                    <g class="rf-bars" clip-path="url(#rfClip)"></g>
+                    <line class="rf-peak" x1="260" y1="22" x2="260" y2="92" stroke="currentColor" stroke-width="1" opacity="0.12"/>
+                </svg>
+            </aside>
+            <div class="tutorial-layout">
+                <div class="tutorial-column" id="tutorial-text-container">
+                    <h1 class="pixel-font" id="main-title">JavaScript</h1>
+                    <h2 id="sub-title">The Basics</h2>
+
+                    <div class="tutorial-section">
+                        <h3>1.1 The Console</h3>
+                        <p>You’ll run one line of JavaScript and see text appear in the console. This is the fastest way
+                            to check that your code is actually running.</p>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <h4>Step 1</h4>
+                        <p>Type this in the editor and press Run:</p>
+                        <div class="code-snippet">console.log("Hello, world!");</div>
+
+                        <p>You should see this in the console output:</p>
+                        <div class="code-snippet output">Hello, world!</div>
+                    </div>
+
+                    <div class="tutorial-troubleshoot">
+                        <p><strong>If you don’t see anything, try these checks:</strong></p>
+                        <ul>
+                            <li>Make sure you typed <code>console.log</code> exactly (spelling and dots matter).</li>
+                            <li>Make sure your text is inside quotes: <code>" "</code>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <h4>Step 2</h4>
+                        <p>Replace the text inside the quotes, then press Run again:</p>
+                    </div>
+                </div>
+
+                <div class="console-column">
+                    <div class="console-window" id="main-console">
+                        <div class="console-header">
+                            <div class="console-controls">
+                                <span class="dot red"></span>
+                            </div>
+                            <div class="console-title">Console</div>
+                            <div class="console-action-icon"></div>
+                        </div>
+                        <div class="console-body">
+                            <div class="console-input-area">
+                                <div class="input-line">
+                                    <span class="prompt">></span>
+                                    <span class="input-text" id="console-typing"></span>
+                                    <span class="cursor"></span>
+                                </div>
+                            </div>
+                            <div class="console-divider">
+                                <span>Output</span>
+                                <span class="help-icon">?</span>
+                            </div>
+                            <div class="console-output-area" id="console-output">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="control-panel" class="glass-panel hidden">
+        <div class="panel-inner">
+            <div class="knob-module">
+                <div class="knob-container">
+                    <svg
+                        id="knobSvg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="576 364 332 332"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <g id="knob">
+                            <g clip-path="url(#paint0_angular_1_2_clip_path)">
+                                <g transform="matrix(0.00599999 0.2665 -0.115827 0.00260773 736 526.5)">
+                                    <foreignObject x="-1524.62" y="-1524.62" width="3049.23" height="3049.23">
+                                        <div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(170,170,170,1) 0deg,rgba(132,132,132,1) 83.0769deg,rgba(207,207,207,1) 280.385deg,rgba(170,170,170,1) 360deg);height:100%;width:100%;opacity:1"></div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <circle cx="742" cy="530" r="166" />
+                            <g clip-path="url(#paint1_angular_1_2_clip_path)">
+                                <g transform="matrix(0.216732 -0.00487952 0.00212075 0.0941966 739.154 534.88)">
+                                    <foreignObject x="-1526.64" y="-1526.64" width="3053.28" height="3053.28">
+                                        <div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(170,170,170,1) 0deg,rgba(132,132,132,1) 83.0769deg,rgba(207,207,207,1) 280.385deg,rgba(170,170,170,1) 360deg);height:100%;width:100%;opacity:1"></div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <circle cx="742" cy="530" r="135" transform="rotate(-90 742 530)" />
+                            <g clip-path="url(#paint2_angular_1_2_clip_path)">
+                                <g transform="matrix(0.00393975 0.174991 -0.076055 0.00171231 738.06 527.702)">
+                                    <foreignObject x="-1529.23" y="-1529.23" width="3058.46" height="3058.46">
+                                        <div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(170,170,170,1) 0deg,rgba(132,132,132,1) 83.0769deg,rgba(207,207,207,1) 280.385deg,rgba(170,170,170,1) 360deg);height:100%;width:100%;opacity:1"></div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <ellipse cx="742" cy="530" rx="109" ry="109" />
+                            <g clip-path="url(#paint3_angular_1_2_clip_path)">
+                                <g transform="matrix(0.00393975 0.174991 -0.076055 0.00171231 738.06 527.702)">
+                                    <foreignObject x="-1529.23" y="-1529.23" width="3058.46" height="3058.46">
+                                        <div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(170,170,170,1) 0deg,rgba(132,132,132,1) 83.0769deg,rgba(207,207,207,1) 280.385deg,rgba(170,170,170,1) 360deg);height:100%;width:100%;opacity:1"></div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <ellipse cx="742" cy="530" rx="109" ry="109" />
+                            <g clip-path="url(#paint4_angular_1_2_clip_path)">
+                                <g transform="matrix(-0.13325 0.00299999 -0.00130386 -0.0579135 743.75 527)">
+                                    <foreignObject x="-1533.44" y="-1533.44" width="3066.88" height="3066.88">
+                                        <div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(170,170,170,1) 0deg,rgba(132,132,132,1) 83.0769deg,rgba(207,207,207,1) 280.385deg,rgba(170,170,170,1) 360deg);height:100%;width:100%;opacity:1"></div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <circle cx="742" cy="530" r="83" transform="rotate(90 742 530)" />
+                            <g clip-path="url(#paint5_angular_1_2_clip_path)">
+                                <g transform="matrix(1.03985e-08 -0.0903072 0.0392496 4.77547e-09 742 530)">
+                                    <foreignObject x="-1477.72" y="-1477.72" width="2955.45" height="2955.45">
+                                        <div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(170,170,170,1) 0deg,rgba(132,132,132,1) 83.0769deg,rgba(207,207,207,1) 280.385deg,rgba(170,170,170,1) 360deg);height:100%;width:100%;opacity:1"></div>
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <ellipse cx="742" cy="530" rx="57" ry="57" transform="rotate(-180 742 530)" />
+                            <circle cx="742" cy="530" r="160.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="153.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="145.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="137.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="129.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="121.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="114.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="108.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="101.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="94.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="87.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="78.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="70.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="63.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="56.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="48.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="40.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="32.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="23.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="17.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="11.875" stroke="#FAFAFA" stroke-width="0.25" />
+                            <circle cx="742" cy="530" r="5.875" stroke="#FAFAFA" stroke-width="0.25" />
+                        </g>
+                        <defs>
+                            <clipPath id="paint0_angular_1_2_clip_path"><circle cx="742" cy="530" r="166" /></clipPath>
+                            <clipPath id="paint1_angular_1_2_clip_path"><circle cx="742" cy="530" r="135" transform="rotate(-90 742 530)" /></clipPath>
+                            <clipPath id="paint2_angular_1_2_clip_path"><ellipse cx="742" cy="530" rx="109" ry="109" /></clipPath>
+                            <clipPath id="paint3_angular_1_2_clip_path"><ellipse cx="742" cy="530" rx="109" ry="109" /></clipPath>
+                            <clipPath id="paint4_angular_1_2_clip_path"><circle cx="742" cy="530" r="83" transform="rotate(90 742 530)" /></clipPath>
+                            <clipPath id="paint5_angular_1_2_clip_path"><ellipse cx="742" cy="530" rx="57" ry="57" transform="rotate(-180 742 530)" /></clipPath>
+                        </defs>
+                    </svg>
+                    <span class="knob-label">FREQUENCY</span>
+                </div>
+            </div>
+
+            <div class="status-module" aria-label="Diagnostic message display">
+                <div class="status-bezel">
+                    <div class="status-screen">
+                        <marquee
+                            id="status-marquee"
+                            behavior="scroll"
+                            direction="left"
+                            scrollamount="6"
+                        >
+                            In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+
+            <div class="depth-module" aria-label="Layer controls">
+                <button type="button" class="depth-button" id="depth-up" aria-label="Raise console layer">↑</button>
+                <button type="button" class="depth-button" id="depth-down" aria-label="Lower console layer">↓</button>
+            </div>
+
+            <div class="toggles-module">
+                <div class="toggle-group">
+                    <label class="toggle">
+                        <input type="checkbox" id="toggle-focus" aria-label="Sharpen focus">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="toggle-group">
+                    <label class="toggle">
+                        <input type="checkbox" id="toggle-jitter" aria-label="Reduce jitter">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="toggle-group">
+                    <label class="toggle">
+                        <input type="checkbox" id="toggle-grid" aria-label="Re-grid">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="toggle-group">
+                    <label class="toggle">
+                        <input type="checkbox" id="toggle-noise" aria-label="Fade noise">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+:root {
+    --primitive-grey-90: #212426;
+    --primitive-grey-75: #3f3d40;
+    --primitive-grey-50: #6c7173;
+    --primitive-grey-25: #babfbf;
+    --primitive-grey-10: #f2f2f2;
+    --primitive-red-90: #d61d00;
+
+    --pixel-font: "Workbench", sans-serif;
+    --body-font: "Instrument Sans", sans-serif;
+    --font-mono: monospace;
+
+    --text-h1-size: 6rem;
+    --text-h1-letter-spacing: -2px;
+    --text-h2-size: 3rem;
+    --text-h3-size: 1.25rem;
+    --text-body-size: 1.25rem;
+    --text-body-small-size: 1rem;
+    --text-code-size: 0.9rem;
+    --text-console-title-size: 0.8rem;
+    --text-console-divider-size: 0.75rem;
+    --text-readout-label-size: 0.65rem;
+    --text-readout-value-size: 1.2rem;
+    --text-status-size: clamp(1.1rem, 1.6vw, 1.65rem);
+
+    --space-2xs: 0.5rem;
+    --space-xs: 0.75rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 2.8rem;
+
+    --radius-code: 4px;
+    --radius-console: 12px;
+    --radius-panel: 20px;
+    --radius-bezel: 22px;
+    --radius-screen: 18px;
+    --radius-pill: 999px;
+
+    --layout-width: min(1540px, calc(100vw - 5rem));
+    --layout-gap: 5rem;
+    --layout-padding: 2rem 2rem 2rem 3rem;
+    --layout-columns: 520px minmax(760px, 940px);
+
+    --meter-shell-width: 120px;
+    --meter-shell-height: min(60vh, 520px);
+    --meter-width: min(520px, 60vh);
+    --console-max-width: 940px;
+    --console-height: 400px;
+    --panel-width: min(90%, 1200px);
+
+    --color-bg: var(--primitive-grey-90);
+    --color-surface: var(--primitive-grey-75);
+    --color-surface-2: var(--primitive-grey-50);
+    --color-muted: var(--primitive-grey-25);
+    --color-text: var(--primitive-grey-10);
+    --color-accent: var(--primitive-red-90);
+    --color-panel-bg: rgba(37, 40, 42, 0.5);
+    --color-panel-border: rgba(242, 242, 242, 0.08);
+    --color-console-bg: rgba(23, 26, 28, 0.9);
+    --color-console-divider: rgba(255, 255, 255, 0.05);
+    --color-grid-line: rgba(255, 255, 255, 0.045);
+    --color-noise-blend: overlay;
+    --color-bg-highlight: rgba(242, 242, 242, 0.12);
+    --color-bg-accent: rgba(214, 29, 0, 0.12);
+    --color-shadow: rgba(0, 0, 0, 0.35);
+    --color-glow: rgba(0, 0, 0, 0.32);
+
+    --jitter-x: 0px;
+    --jitter-y: 0px;
+}
