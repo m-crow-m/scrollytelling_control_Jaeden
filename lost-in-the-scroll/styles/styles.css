@@ -215,6 +215,13 @@ p {
     text-align: right;
 }
 
+body.gsap-ready .tutorial-section,
+body.gsap-ready .tutorial-step,
+body.gsap-ready .tutorial-troubleshoot {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
 .tutorial-section p {
     font-size: var(--text-body-small-size);
     color: var(--color-muted);
@@ -818,5 +825,16 @@ body.mode-glitch #viewport-content {
     .status-module {
         order: 2;
         width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body.gsap-ready .tutorial-section,
+    body.gsap-ready .tutorial-step,
+    body.gsap-ready .tutorial-troubleshoot {
+        opacity: 1;
+        transform: none;
+        animation: none;
+        transition: none;
     }
 }

@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const { gsap } = window;
+    document.body.classList.add("gsap-ready");
     const tutorialTextContainer = document.getElementById("tutorial-text-container");
     const controlPanel = document.getElementById("control-panel");
     const consoleOutput = document.getElementById("console-output");
@@ -30,11 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const statusMarquee = document.getElementById("status-marquee");
     const depthUp = document.getElementById("depth-up");
     const depthDown = document.getElementById("depth-down");
+    const introRevealElements = document.querySelectorAll(
+        "#main-title, #sub-title, .tutorial-section, .tutorial-step, .tutorial-troubleshoot"
+    );
 
     const toggleFocus = document.getElementById("toggle-focus");
     const toggleJitter = document.getElementById("toggle-jitter");
     const toggleMode = document.getElementById("toggle-grid");
     const toggleNoise = document.getElementById("toggle-noise");
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     const tutorialCode = 'console.log("Hello, world!");';
     const phases = [
@@ -70,24 +75,14 @@ document.addEventListener("DOMContentLoaded", () => {
     let marqueeTween = null;
     let lastScrambleAt = 0;
     const originalTexts = new Map();
-    const textElements = tutorialTextContainer.querySelectorAll("h1, h2, h3, h4, p, div.code-snippet, li");
+    const textElements = tutorialTextContainer.querySelectorAll("h2, h3, h4, p, div.code-snippet, li");
     const textDriftSeeds = new Map();
-
-    gsap.set(knob, { svgOrigin: "742 530", transformOrigin: "50% 50%" });
-    gsap.set(controlPanel, { xPercent: -50, yPercent: 150, opacity: 0.9 });
-    gsap.set(tutorialLayout, { x: 0, y: 0 });
-    gsap.set(tutorialColumn, { filter: "blur(0px)" });
-    gsap.set(consoleColumn, { filter: "blur(0px)" });
-    gsap.set(consoleWindow, { filter: "blur(0px)" });
-    gsap.set(rfMeterShell, { filter: "blur(0px)" });
-    gsap.set(header, { filter: "blur(0px)" });
-
-    const setNoiseOpacity = gsap.quickTo(noiseCanvas, "opacity", { duration: 0.22, ease: "power2.out" });
-    const setGridOpacity = gsap.quickTo(gridOverlay, "opacity", { duration: 0.24, ease: "power2.out" });
-    const setViewportScale = gsap.quickTo(viewport, "scale", { duration: 0.45, ease: "power2.out" });
-    const setHeaderOpacity = gsap.quickTo(header, "opacity", { duration: 0.35, ease: "power2.out" });
-    const setJitterX = gsap.quickTo(tutorialLayout, "x", { duration: 0.08, ease: "none" });
-    const setJitterY = gsap.quickTo(tutorialLayout, "y", { duration: 0.08, ease: "none" });
+    let setNoiseOpacity = () => {};
+    let setGridOpacity = () => {};
+    let setViewportScale = () => {};
+    let setHeaderOpacity = () => {};
+    let setJitterX = () => {};
+    let setJitterY = () => {};
 
     textElements.forEach((element) => {
         originalTexts.set(element, element.textContent);
@@ -579,6 +574,77 @@ document.addEventListener("DOMContentLoaded", () => {
         updateControlPanel();
     }
 
+    function runIntroSequence() {
+        const introTl = gsap.timeline();
+        introTl
+            .from("#main-title", {
+                opacity: 0,
+                y: 30,
+                duration: 0.8,
+                ease: "power2.out"
+            })
+            .from("#sub-title", {
+                opacity: 0,
+                y: 18,
+                duration: 0.6,
+                ease: "power2.out"
+            }, "-=0.35")
+            .to(".tutorial-section, .tutorial-step, .tutorial-troubleshoot", {
+                opacity: 1,
+                y: 0,
+                duration: 0.55,
+                stagger: 0.12,
+                ease: "power1.out"
+            }, "-=0.2")
+            .set("#main-title", { opacity: 1, clearProps: "transform" });
+    }
+
+    buildRfMeter();
+    initStatusMarquee();
+    window.setTimeout(initStatusMarquee, 120);
+    setModeClass("dark");
+    applyPhase(phases[0]);
+    logToConsole("> SYSTEM INITIALIZED");
+    logToConsole("> LOADING TUTORIAL...");
+
+    if (prefersReducedMotion) {
+        header.style.opacity = "1";
+        controlPanel.style.transform = "translate(-50%, 0)";
+        controlPanel.style.opacity = "1";
+        noiseCanvas.style.opacity = "0";
+        consoleTyping.textContent = tutorialCode;
+        introRevealElements.forEach((element) => {
+            element.style.opacity = "1";
+            element.style.transform = "none";
+        });
+        readoutNoise.textContent = "0.03";
+        readoutFreq.textContent = "0.0";
+        readoutFocus.textContent = "SHARP";
+        return;
+    }
+
+    gsap.set(knob, { svgOrigin: "742 530", transformOrigin: "50% 50%" });
+    gsap.set(controlPanel, { xPercent: -50, yPercent: 150, opacity: 0.9 });
+    gsap.set(tutorialLayout, { x: 0, y: 0 });
+    gsap.set(tutorialColumn, { filter: "blur(0px)" });
+    gsap.set(consoleColumn, { filter: "blur(0px)" });
+    gsap.set(consoleWindow, { filter: "blur(0px)" });
+    gsap.set(rfMeterShell, { filter: "blur(0px)" });
+    gsap.set(header, { filter: "blur(0px)" });
+
+    setNoiseOpacity = gsap.quickTo(noiseCanvas, "opacity", { duration: 0.22, ease: "power2.out" });
+    setGridOpacity = gsap.quickTo(gridOverlay, "opacity", { duration: 0.24, ease: "power2.out" });
+    setViewportScale = gsap.quickTo(viewport, "scale", { duration: 0.45, ease: "power2.out" });
+    setHeaderOpacity = gsap.quickTo(header, "opacity", { duration: 0.35, ease: "power2.out" });
+    setJitterX = gsap.quickTo(tutorialLayout, "x", { duration: 0.08, ease: "none" });
+    setJitterY = gsap.quickTo(tutorialLayout, "y", { duration: 0.08, ease: "none" });
+
+    setFocusPlane(2);
+    resizeNoise();
+    runIntroSequence();
+    renderNoise();
+    update();
+
     [toggleFocus, toggleJitter, toggleMode, toggleNoise].forEach((toggle) => {
         toggle.addEventListener("change", update);
     });
@@ -613,18 +679,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-
-    buildRfMeter();
-    initStatusMarquee();
-    window.setTimeout(initStatusMarquee, 120);
-    setFocusPlane(2);
-    setModeClass("dark");
-    resizeNoise();
-    renderNoise();
-    applyPhase(phases[0]);
-    update();
-    logToConsole("> SYSTEM INITIALIZED");
-    logToConsole("> LOADING TUTORIAL...");
 
     window.addEventListener("beforeunload", () => {
         gsap.ticker.remove(update);
