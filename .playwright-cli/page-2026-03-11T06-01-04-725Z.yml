@@ -1,0 +1,2378 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: NOISE
+        - generic [ref=e6]: "0.31"
+      - generic [ref=e7]:
+        - generic [ref=e8]: FREQUENCY
+        - generic [ref=e9]: "6.3"
+      - generic [ref=e10]:
+        - generic [ref=e11]: FOCUS
+        - generic [ref=e12]: DRIFT
+  - main [ref=e13]:
+    - generic [ref=e15]:
+      - complementary:
+        - img
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - heading "JavaScript" [level=1] [ref=e18]
+          - heading ".@e [a80HG" [level=2] [ref=e145]
+          - generic [ref=e20]:
+            - heading "401 T^? C$4:o;K" [level=3] [ref=e146]
+            - paragraph [ref=e22]: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+          - generic [ref=e23]:
+            - heading "S3@p 7" [level=4] [ref=e147]
+            - paragraph [ref=e25]: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+            - generic [ref=e26]: )on)?:HI:ogC"NLl@o4 []H3d!H);
+            - paragraph [ref=e27]: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+            - generic [ref=e28]: BCl]!, 2.6L?5
+          - generic [ref=e29]:
+            - paragraph [ref=e30]: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+            - list [ref=e31]:
+              - listitem [ref=e32]: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+              - listitem [ref=e33]: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+          - generic [ref=e34]:
+            - 'heading "I8A| #" [level=4] [ref=e148]'
+            - paragraph [ref=e36]: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+        - generic [ref=e38]:
+          - generic [ref=e42]: Console
+          - generic [ref=e43]:
+            - generic [ref=e45]:
+              - generic [ref=e46]: ">"
+              - generic [ref=e137]: console.log("Hello, world!");
+            - generic [ref=e48]:
+              - generic [ref=e49]: Output
+              - generic [ref=e50]: "?"
+            - generic [ref=e51]:
+              - paragraph [ref=e52]: "> SYSTEM INITIALIZED"
+              - paragraph [ref=e53]: "> LOADING TUTORIAL..."
+              - paragraph [ref=e138]: "> SYSTEM_FAIL_STACK_OVERFLOW"
+              - paragraph [ref=e139]: "> RECALIBRATE NOW"
+              - paragraph [ref=e140]: "> RECALIBRATE NOW"
+              - paragraph [ref=e141]: "> SYSTEM_FAIL_STACK_OVERFLOW"
+              - paragraph [ref=e142]: "> 01010111 01001000 01011001"
+              - paragraph [ref=e143]: "> WARNING: Signal misalignment in sector 7"
+              - paragraph [ref=e144]: "> WHAT IS HAPPENING?"
+              - paragraph [ref=e149]: "> INTERNAL ERROR: Frequency resonance detected"
+      - region "It only admits that the noise had laws." [ref=e150]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: NOISE
+                      - generic: "0.31"
+                    - generic:
+                      - generic: FREQUENCY
+                      - generic: "6.3"
+                    - generic:
+                      - generic: FOCUS
+                      - generic: DRIFT
+                - generic:
+                  - complementary:
+                    - img
+                  - generic:
+                    - generic:
+                      - heading [level=1]: JavaScript
+                      - heading [level=2]: .@e [a80HG
+                      - generic:
+                        - heading [level=3]: 401 T^? C$4:o;K
+                        - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                      - generic:
+                        - heading [level=4]: S3@p 7
+                        - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                        - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                        - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                        - generic: BCl]!, 2.6L?5
+                      - generic:
+                        - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                        - list:
+                          - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                          - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                      - generic:
+                        - heading [level=4]: "I8A| #"
+                        - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Console
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: ">"
+                              - generic: console.log("Hello, world!");
+                          - generic:
+                            - generic: Output
+                            - generic: "?"
+                          - generic:
+                            - paragraph: "> SYSTEM INITIALIZED"
+                            - paragraph: "> LOADING TUTORIAL..."
+                            - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                            - paragraph: "> RECALIBRATE NOW"
+                            - paragraph: "> RECALIBRATE NOW"
+                            - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                            - paragraph: "> 01010111 01001000 01011001"
+                            - paragraph: "> WARNING: Signal misalignment in sector 7"
+                            - paragraph: "> WHAT IS HAPPENING?"
+                            - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                        - generic: FREQUENCY
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                    - generic:
+                      - button: ↑
+                      - button: ↓
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.31"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "6.3"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: DRIFT
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: .@e [a80HG
+                        - generic:
+                          - heading [level=3]: 401 T^? C$4:o;K
+                          - paragraph: "M#u>l< 4_7 7N{ 918J 8+ JaKBG79K|& !9d (9# &A); app0}8 }n t+* 4)]>,l%M ;99s ], !h3 @^s#e|t 2|( %E Nh{c! 4h}t !&5B M&+) (A 3$HG%|8F ),)3in45"
+                        - generic:
+                          - heading [level=4]: S3@p 7
+                          - paragraph: "T3{7 thi_ M> Che .K*t;A a3G pJes6 R2*:"
+                          - generic: )on)?:HI:ogC"NLl@o4 []H3d!H);
+                          - paragraph: 5*u s213D@ s]^ )F!@ 0; 2h[ ^2@E|!I D7(Iu!]
+                          - generic: BCl]!, 2.6L?5
+                        - generic:
+                          - paragraph: "@L +*L +K^.N Ne{ <3y$@JF#) ,#y Bh7sJ BhHI0+."
+                          - list:
+                            - listitem: "|Gke K#LN Gou Iy7CM G6nsKM#+$M; 8135t3y K{6)N0{LA an| Ao*E G|<tA])9"
+                            - listitem: "H%k6 sK!@ }}#N 5@4t ., 3n:%J1 @98,e6$ ( 3."
+                        - generic:
+                          - heading [level=4]: "I8A| #"
+                          - paragraph: ")e|laEC th# :H%G H]#i@@ t*] :)F4$^D +?C+ @}e^# 7AJ 0g|i8:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                                - generic: console.log("Hello, world!");
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                            - generic:
+                              - paragraph: "> SYSTEM INITIALIZED"
+                              - paragraph: "> LOADING TUTORIAL..."
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> RECALIBRATE NOW"
+                              - paragraph: "> SYSTEM_FAIL_STACK_OVERFLOW"
+                              - paragraph: "> 01010111 01001000 01011001"
+                              - paragraph: "> WARNING: Signal misalignment in sector 7"
+                              - paragraph: "> WHAT IS HAPPENING?"
+                              - paragraph: "> INTERNAL ERROR: Frequency resonance detected"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+        - generic [ref=e152]:
+          - paragraph [ref=e153]: Chapter 02 / Coming to Terms
+          - generic [ref=e154]:
+            - heading "It only admits that the noise had laws." [level=2] [ref=e155]
+            - heading [level=2] [ref=e156]: The signal does not comfort.
+  - contentinfo [ref=e54]:
+    - generic [ref=e55]:
+      - generic [ref=e57]:
+        - img [ref=e58]
+        - generic [ref=e112]: FREQUENCY
+      - generic "Diagnostic message display" [ref=e113]:
+        - generic [ref=e116]: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+      - generic "Layer controls" [ref=e117]:
+        - button "Raise console layer" [ref=e118] [cursor=pointer]: ↑
+        - button "Lower console layer" [ref=e119] [cursor=pointer]: ↓
+      - generic [ref=e120]:
+        - generic [ref=e122]:
+          - checkbox "Sharpen focus"
+        - generic [ref=e125]:
+          - checkbox "Reduce jitter"
+        - generic [ref=e128]:
+          - checkbox "Re-grid"
+        - generic [ref=e131]:
+          - checkbox "Fade noise"

@@ -1,0 +1,2212 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: NOISE
+        - generic [ref=e6]: "0.14"
+      - generic [ref=e7]:
+        - generic [ref=e8]: FREQUENCY
+        - generic [ref=e9]: "0.0"
+      - generic [ref=e10]:
+        - generic [ref=e11]: FOCUS
+        - generic [ref=e12]: SHARP
+  - main [ref=e13]:
+    - generic [ref=e15]:
+      - complementary:
+        - img
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - heading "JavaScript" [level=1] [ref=e18]
+          - heading "The Basics" [level=2] [ref=e19]
+          - generic [ref=e20]:
+            - heading "1.1 The Console" [level=3] [ref=e21]
+            - paragraph [ref=e22]: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+          - generic [ref=e23]:
+            - heading "Step 1" [level=4] [ref=e24]
+            - paragraph [ref=e25]: "Type this in the editor and press Run:"
+            - generic [ref=e26]: console.log("Hello, world!");
+            - paragraph [ref=e27]: "You should see this in the console output:"
+            - generic [ref=e28]: Hello, world!
+          - generic [ref=e29]:
+            - paragraph [ref=e30]: "If you don’t see anything, try these checks:"
+            - list [ref=e31]:
+              - listitem [ref=e32]: Make sure you typed console.log exactly (spelling and dots matter).
+              - listitem [ref=e33]: "Make sure your text is inside quotes: \" \"."
+          - generic [ref=e34]:
+            - heading "Step 2" [level=4] [ref=e35]
+            - paragraph [ref=e36]: "Replace the text inside the quotes, then press Run again:"
+        - generic [ref=e38]:
+          - generic [ref=e42]: Console
+          - generic [ref=e43]:
+            - generic [ref=e46]: ">"
+            - generic [ref=e48]:
+              - generic [ref=e49]: Output
+              - generic [ref=e50]: "?"
+            - generic [ref=e51]:
+              - paragraph [ref=e52]: "> SYSTEM INITIALIZED"
+              - paragraph [ref=e53]: "> LOADING TUTORIAL..."
+      - region "The signal does not comfort.":
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: NOISE
+                      - generic: "0.00"
+                    - generic:
+                      - generic: FREQUENCY
+                      - generic: "0.00"
+                    - generic:
+                      - generic: FOCUS
+                      - generic: SHARP
+                - generic:
+                  - complementary:
+                    - img
+                  - generic:
+                    - generic:
+                      - heading [level=1]: JavaScript
+                      - heading [level=2]: The Basics
+                      - generic:
+                        - heading [level=3]: 1.1 The Console
+                        - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                      - generic:
+                        - heading [level=4]: Step 1
+                        - paragraph: "Type this in the editor and press Run:"
+                        - generic: console.log("Hello, world!");
+                        - paragraph: "You should see this in the console output:"
+                        - generic: Hello, world!
+                      - generic:
+                        - paragraph:
+                          - strong: "If you don’t see anything, try these checks:"
+                        - list:
+                          - listitem:
+                            - text: Make sure you typed
+                            - code: console.log
+                            - text: exactly (spelling and dots matter).
+                          - listitem:
+                            - text: "Make sure your text is inside quotes:"
+                            - code: "\" \""
+                            - text: .
+                      - generic:
+                        - heading [level=4]: Step 2
+                        - paragraph: "Replace the text inside the quotes, then press Run again:"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Console
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: ">"
+                          - generic:
+                            - generic: Output
+                            - generic: "?"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                        - generic: FREQUENCY
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                    - generic:
+                      - button: ↑
+                      - button: ↓
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: NOISE
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FREQUENCY
+                        - generic: "0.00"
+                      - generic:
+                        - generic: FOCUS
+                        - generic: SHARP
+                  - generic:
+                    - complementary:
+                      - img
+                    - generic:
+                      - generic:
+                        - heading [level=1]: JavaScript
+                        - heading [level=2]: The Basics
+                        - generic:
+                          - heading [level=3]: 1.1 The Console
+                          - paragraph: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+                        - generic:
+                          - heading [level=4]: Step 1
+                          - paragraph: "Type this in the editor and press Run:"
+                          - generic: console.log("Hello, world!");
+                          - paragraph: "You should see this in the console output:"
+                          - generic: Hello, world!
+                        - generic:
+                          - paragraph:
+                            - strong: "If you don’t see anything, try these checks:"
+                          - list:
+                            - listitem:
+                              - text: Make sure you typed
+                              - code: console.log
+                              - text: exactly (spelling and dots matter).
+                            - listitem:
+                              - text: "Make sure your text is inside quotes:"
+                              - code: "\" \""
+                              - text: .
+                        - generic:
+                          - heading [level=4]: Step 2
+                          - paragraph: "Replace the text inside the quotes, then press Run again:"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Console
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ">"
+                            - generic:
+                              - generic: Output
+                              - generic: "?"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: FREQUENCY
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+                      - generic:
+                        - button: ↑
+                        - button: ↓
+        - generic:
+          - paragraph: Chapter 02 / Coming to Terms
+          - generic:
+            - heading "The signal does not comfort." [level=2]
+  - contentinfo [ref=e54]:
+    - generic [ref=e55]:
+      - generic [ref=e57]:
+        - img [ref=e58]
+        - generic [ref=e112]: FREQUENCY
+      - generic "Diagnostic message display" [ref=e113]:
+        - generic [ref=e116]: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+      - generic "Layer controls" [ref=e117]:
+        - button "Raise console layer" [ref=e118] [cursor=pointer]: ↑
+        - button "Lower console layer" [ref=e119] [cursor=pointer]: ↓
+      - generic [ref=e120]:
+        - generic [ref=e122]:
+          - checkbox "Sharpen focus"
+        - generic [ref=e125]:
+          - checkbox "Reduce jitter"
+        - generic [ref=e128]:
+          - checkbox "Re-grid"
+        - generic [ref=e131]:
+          - checkbox "Fade noise"
