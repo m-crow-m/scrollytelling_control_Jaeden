@@ -20,6 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const readoutFocus = document.querySelector("#readout-focus .value");
     const header = document.querySelector(".fixed-header");
     const viewport = document.getElementById("viewport-content");
+    const chapterTwo = document.getElementById("chapter-two");
+    const chapterTwoFragments = document.getElementById("chapter-two-fragments");
+    const chapterTwoLabel = chapterTwo.querySelector(".chapter-two__label");
+    const chapterTwoLine = chapterTwo.querySelector(".chapter-two__line");
+    const chapterTwoIncomingLine = chapterTwo.querySelector(".chapter-two__line--incoming");
+    const chapterTwoGlitch = chapterTwo.querySelector(".chapter-two__glitch");
     const noiseCanvas = document.getElementById("noise-overlay");
     const noiseContext = noiseCanvas.getContext("2d", { alpha: true });
     const gridOverlay = document.getElementById("grid-overlay");
@@ -42,6 +48,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     const tutorialCode = 'console.log("Hello, world!");';
+    const chapterTwoStart = 0.78;
+    const chapterTwoRevealStart = 0.9;
+    const chapterTwoLines = [
+        "The signal does not comfort.",
+        "It only admits that the noise had laws.",
+        "What breaks us is not everything.",
+        "What remains is smaller, colder, ours.",
+        "Clarity is a winter light.",
+        "It does not save the room. It lets us see it."
+    ];
     const phases = [
         { name: "arrival", threshold: 0, label: "nothing" },
         { name: "instability", threshold: 0.2, label: "a lesson" },
@@ -74,6 +90,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let modeGlitchActive = false;
     let marqueeTween = null;
     let lastScrambleAt = 0;
+    let chapterTwoActive = false;
+    let chapterTwoTransitionComplete = false;
+    let chapterTwoLineIndex = -1;
+    let chapterTwoMorphTween = null;
+    const chapterTwoFragmentSeeds = [];
     const originalTexts = new Map();
     const textElements = tutorialTextContainer.querySelectorAll("h2, h3, h4, p, div.code-snippet, li");
     const textDriftSeeds = new Map();
@@ -93,6 +114,34 @@ document.addEventListener("DOMContentLoaded", () => {
             range: 0.6 + Math.random() * 1.1
         });
     });
+
+    function buildChapterTwoFragments() {
+        const columns = 12;
+        const rows = 8;
+        const totalFragments = columns * rows;
+        chapterTwoFragments.innerHTML = "";
+        chapterTwoFragmentSeeds.length = 0;
+
+        for (let index = 0; index < totalFragments; index += 1) {
+            const column = index % columns;
+            const row = Math.floor(index / columns);
+            const normX = columns > 1 ? column / (columns - 1) - 0.5 : 0;
+            const normY = rows > 1 ? row / (rows - 1) - 0.5 : 0;
+            const fragment = document.createElement("span");
+            fragment.className = "chapter-two__fragment";
+            fragment.style.opacity = "0";
+            chapterTwoFragments.appendChild(fragment);
+            chapterTwoFragmentSeeds.push({
+                element: fragment,
+                driftX: normX * 300 + (Math.random() - 0.5) * 70,
+                driftY: (normY * 0.7 + 0.18) * 460 + (Math.random() - 0.5) * 90,
+                rotate: normX * 24 + (Math.random() - 0.5) * 14,
+                scale: 0.94 + Math.random() * 0.28,
+                delay: Math.random() * 0.18,
+                blur: 0.8 + Math.random() * 5
+            });
+        }
+    }
 
     const chars = "ABCDEFGHIJKLMN0123456789!@#$%^&*()_+{}[]|;:,.<>?";
 
@@ -560,10 +609,270 @@ document.addEventListener("DOMContentLoaded", () => {
         lastScrollY = window.scrollY;
     }
 
+    function transitionChapterTwoLine(nextIndex, { immediate = false } = {}) {
+        if (nextIndex === chapterTwoLineIndex && !immediate) return;
+
+        const nextText = chapterTwoLines[nextIndex];
+        if (!nextText) return;
+
+        const previousText = chapterTwoLine.textContent.trim() || nextText;
+        chapterTwoLineIndex = nextIndex;
+        gsap.killTweensOf([chapterTwoLine, chapterTwoIncomingLine]);
+        if (chapterTwoMorphTween) {
+            chapterTwoMorphTween.kill();
+            chapterTwoMorphTween = null;
+        }
+
+        if (immediate) {
+            chapterTwoLine.textContent = nextText;
+            gsap.set(chapterTwoLine, {
+                opacity: 1,
+                y: 0,
+                filter: "blur(0px)",
+                letterSpacing: "-0.06em",
+                rotationX: 0
+            });
+            gsap.set(chapterTwoIncomingLine, {
+                opacity: 0,
+                y: 54,
+                filter: "blur(28px)",
+                letterSpacing: "-0.18em",
+                rotationX: -76
+            });
+            return;
+        }
+
+        chapterTwoIncomingLine.textContent = previousText;
+        chapterTwoLine.textContent = nextText;
+        gsap.set(chapterTwoIncomingLine, {
+            opacity: 1,
+            y: 0,
+            filter: "blur(0px)",
+            letterSpacing: "-0.06em",
+            rotationX: 0
+        });
+        gsap.set(chapterTwoLine, {
+            opacity: 0,
+            y: 72,
+            filter: "blur(30px)",
+            letterSpacing: "-0.22em",
+            rotationX: -84
+        });
+
+        chapterTwoMorphTween = gsap.timeline({
+            defaults: { overwrite: true },
+            onComplete: () => {
+                gsap.set(chapterTwoIncomingLine, {
+                    opacity: 0,
+                    y: 54,
+                    filter: "blur(28px)",
+                    letterSpacing: "-0.18em",
+                    rotationX: -76
+                });
+                chapterTwoMorphTween = null;
+            }
+        });
+
+        chapterTwoMorphTween
+            .to(chapterTwoIncomingLine, {
+                opacity: 0,
+                y: -58,
+                filter: "blur(26px)",
+                letterSpacing: "0.08em",
+                rotationX: 72,
+                duration: 0.38,
+                ease: "power3.in"
+            }, 0)
+            .to(chapterTwoLine, {
+                opacity: 1,
+                y: 0,
+                filter: "blur(0px)",
+                letterSpacing: "-0.06em",
+                rotationX: 0,
+                duration: 0.74,
+                ease: "expo.out"
+            }, 0.1)
+            .to(chapterTwo, {
+                filter: "brightness(1.08)",
+                duration: 0.18,
+                yoyo: true,
+                repeat: 1,
+                ease: "power1.inOut"
+            }, 0.14);
+    }
+
+    function updateChapterTwoSequence() {
+        if (!chapterTwoTransitionComplete) return;
+        const localProgress = mapRange(scrollProgress, chapterTwoRevealStart, 1);
+        const nextIndex = clamp(Math.round(localProgress * (chapterTwoLines.length - 1)), 0, chapterTwoLines.length - 1);
+        transitionChapterTwoLine(nextIndex);
+    }
+
+    function updateChapterTwoTransition() {
+        const introProgress = mapRange(scrollProgress, chapterTwoStart, chapterTwoRevealStart);
+        chapterTwoTransitionComplete = introProgress >= 1;
+
+        document.body.classList.toggle("chapter-two-transition", introProgress < 1);
+        gsap.set(chapterTwo, { opacity: 1 });
+        gsap.set(controlPanel, {
+            opacity: 1 - introProgress * 1.2,
+            yPercent: introProgress * 180
+        });
+        gsap.set(header, { opacity: 1 - introProgress * 0.92 });
+        gsap.set(viewport, {
+            filter: `contrast(${1 + introProgress * 0.16}) saturate(${1 - introProgress * 0.24}) blur(${introProgress * 1.1}px)`
+        });
+
+        const veilOpacity = Math.min(0.94, introProgress * 1.08);
+        const crumbleProgress = mapRange(introProgress, 0.14, 0.94);
+        const freezeHold = introProgress < 0.14 ? 1 : 0;
+        gsap.set(chapterTwoGlitch, { opacity: crumbleProgress > 0 ? 1 : freezeHold * 0.4 });
+        gsap.set(chapterTwo.querySelector(".chapter-two__veil"), { opacity: veilOpacity });
+        gsap.set(chapterTwoFragments, { opacity: crumbleProgress > 0 ? 1 : 0 });
+
+        chapterTwoFragmentSeeds.forEach((seed) => {
+            const fragmentProgress = clamp((crumbleProgress - seed.delay) / (1 - seed.delay), 0, 1);
+            const lift = Math.pow(fragmentProgress, 1.08);
+            gsap.set(seed.element, {
+                opacity: fragmentProgress > 0 ? 0.08 + (1 - fragmentProgress) * 0.92 : 0,
+                x: seed.driftX * lift,
+                y: seed.driftY * lift,
+                rotate: seed.rotate * lift,
+                scale: 1 + (seed.scale - 1) * lift,
+                filter: `blur(${seed.blur * lift}px)`
+            });
+        });
+
+        const sentenceVisibility = mapRange(introProgress, 0.88, 1);
+        gsap.set(chapterTwoLabel, {
+            opacity: sentenceVisibility,
+            y: 16 - sentenceVisibility * 16,
+            filter: `blur(${(1 - sentenceVisibility) * 10}px)`
+        });
+
+        if (!chapterTwoTransitionComplete) {
+            gsap.set(chapterTwoLine, {
+                opacity: 0,
+                y: 48,
+                filter: "blur(28px)"
+            });
+            gsap.set(chapterTwoIncomingLine, { opacity: 0 });
+        }
+    }
+
+    function activateChapterTwo() {
+        if (chapterTwoActive) return;
+        chapterTwoActive = true;
+        chapterTwoTransitionComplete = false;
+        document.body.classList.add("chapter-two-active");
+        gsap.killTweensOf([
+            controlPanel,
+            header,
+            chapterTwo,
+            chapterTwoFragments,
+            chapterTwoLabel,
+            chapterTwoLine,
+            chapterTwoIncomingLine,
+            chapterTwoGlitch,
+            viewport
+        ]);
+        gsap.set(chapterTwo, { opacity: 1 });
+        gsap.set(chapterTwoFragments, { opacity: 0 });
+        gsap.set(chapterTwoGlitch, { opacity: 0 });
+        gsap.set(chapterTwoLabel, { opacity: 0, y: 16, filter: "blur(10px)" });
+        gsap.set(chapterTwoLine, {
+            opacity: 0,
+            y: 34,
+            filter: "blur(30px)",
+            letterSpacing: "-0.06em",
+            rotationX: 0
+        });
+        gsap.set(chapterTwoIncomingLine, {
+            opacity: 0,
+            y: 54,
+            filter: "blur(28px)",
+            letterSpacing: "-0.18em",
+            rotationX: -76
+        });
+        updateChapterTwoTransition();
+    }
+
+    function deactivateChapterTwo() {
+        if (!chapterTwoActive) return;
+        chapterTwoActive = false;
+        chapterTwoTransitionComplete = false;
+        document.body.classList.remove("chapter-two-active");
+        document.body.classList.remove("chapter-two-transition");
+        if (chapterTwoMorphTween) {
+            chapterTwoMorphTween.kill();
+            chapterTwoMorphTween = null;
+        }
+        gsap.killTweensOf([controlPanel, header, chapterTwo, chapterTwoFragments, chapterTwoLabel, chapterTwoLine, chapterTwoIncomingLine, chapterTwoGlitch]);
+        gsap.set(chapterTwo, { opacity: 0 });
+        gsap.set(chapterTwoFragments, { opacity: 0 });
+        gsap.set(chapterTwoGlitch, { opacity: 0 });
+        gsap.set(chapterTwoLabel, { opacity: 0, y: 16, filter: "blur(10px)" });
+        gsap.set(chapterTwoLine, { opacity: 0, y: 16, filter: "blur(18px)", letterSpacing: "-0.06em", rotationX: 0 });
+        gsap.set(chapterTwoIncomingLine, { opacity: 0, y: 54, filter: "blur(28px)", letterSpacing: "-0.18em", rotationX: -76 });
+        chapterTwoLineIndex = -1;
+        gsap.to(controlPanel, {
+            opacity: 1,
+            yPercent: 0,
+            duration: 0.2,
+            ease: "power2.out",
+            overwrite: true
+        });
+        gsap.to(header, {
+            opacity: 1,
+            duration: 0.2,
+            ease: "power2.out",
+            overwrite: true
+        });
+        gsap.set(viewport, { clearProps: "filter" });
+    }
+
+    function updateReducedMotionChapter() {
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+        scrollProgress = totalHeight > 0 ? window.scrollY / totalHeight : 0;
+        scrollProgress = clamp(scrollProgress, 0, 1);
+        const shouldShowChapterTwo = scrollProgress >= chapterTwoStart;
+
+        document.body.classList.toggle("chapter-two-active", shouldShowChapterTwo);
+        chapterTwo.style.opacity = shouldShowChapterTwo ? "1" : "0";
+        chapterTwoLabel.style.opacity = shouldShowChapterTwo ? "1" : "0";
+        chapterTwoLabel.style.transform = "none";
+        chapterTwoLine.textContent = chapterTwoLines[
+            clamp(
+                Math.round(mapRange(scrollProgress, chapterTwoRevealStart, 1) * (chapterTwoLines.length - 1)),
+                0,
+                chapterTwoLines.length - 1
+            )
+        ];
+        chapterTwoLine.style.opacity = shouldShowChapterTwo ? "1" : "0";
+        chapterTwoLine.style.transform = "none";
+        chapterTwoLine.style.filter = "none";
+        controlPanel.style.opacity = shouldShowChapterTwo ? "0" : "1";
+        header.style.opacity = shouldShowChapterTwo ? "0.18" : "1";
+    }
+
     function update() {
         const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
         scrollProgress = totalHeight > 0 ? window.scrollY / totalHeight : 0;
         scrollProgress = clamp(scrollProgress, 0, 1);
+
+        const shouldActivateChapterTwo = scrollProgress >= chapterTwoStart;
+        if (shouldActivateChapterTwo) {
+            activateChapterTwo();
+        } else {
+            deactivateChapterTwo();
+        }
+
+        if (chapterTwoActive) {
+            lastScrollY = window.scrollY;
+            updateChapterTwoTransition();
+            updateChapterTwoSequence();
+            return;
+        }
 
         updateKnobRotation();
         updateModeState();
@@ -600,6 +909,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     buildRfMeter();
+    buildChapterTwoFragments();
     initStatusMarquee();
     window.setTimeout(initStatusMarquee, 120);
     setModeClass("dark");
@@ -620,6 +930,8 @@ document.addEventListener("DOMContentLoaded", () => {
         readoutNoise.textContent = "0.03";
         readoutFreq.textContent = "0.0";
         readoutFocus.textContent = "SHARP";
+        updateReducedMotionChapter();
+        window.addEventListener("scroll", updateReducedMotionChapter, { passive: true });
         return;
     }
 
@@ -631,6 +943,11 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.set(consoleWindow, { filter: "blur(0px)" });
     gsap.set(rfMeterShell, { filter: "blur(0px)" });
     gsap.set(header, { filter: "blur(0px)" });
+    gsap.set(chapterTwo, { opacity: 0 });
+    gsap.set(chapterTwoLabel, { y: 16 });
+    gsap.set(chapterTwoLine, { y: 16 });
+    gsap.set(chapterTwoIncomingLine, { y: 54, opacity: 0 });
+    gsap.set(chapterTwoGlitch, { opacity: 0 });
 
     setNoiseOpacity = gsap.quickTo(noiseCanvas, "opacity", { duration: 0.22, ease: "power2.out" });
     setGridOpacity = gsap.quickTo(gridOverlay, "opacity", { duration: 0.24, ease: "power2.out" });

@@ -1,0 +1,77 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: NOISE
+        - generic [ref=e6]: "0.00"
+      - generic [ref=e7]:
+        - generic [ref=e8]: FREQUENCY
+        - generic [ref=e9]: "0.00"
+      - generic [ref=e10]:
+        - generic [ref=e11]: FOCUS
+        - generic [ref=e12]: SHARP
+  - main [ref=e13]:
+    - generic [ref=e15]:
+      - complementary:
+        - img
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - heading "JavaScript" [level=1] [ref=e18]
+          - heading "The Basics" [level=2] [ref=e19]
+          - generic [ref=e20]:
+            - heading "1.1 The Console" [level=3] [ref=e21]
+            - paragraph [ref=e22]: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+          - generic [ref=e23]:
+            - heading "Step 1" [level=4] [ref=e24]
+            - paragraph [ref=e25]: "Type this in the editor and press Run:"
+            - generic [ref=e26]: console.log("Hello, world!");
+            - paragraph [ref=e27]: "You should see this in the console output:"
+            - generic [ref=e28]: Hello, world!
+          - generic [ref=e29]:
+            - paragraph [ref=e30]:
+              - strong [ref=e31]: "If you don’t see anything, try these checks:"
+            - list [ref=e32]:
+              - listitem [ref=e33]:
+                - text: Make sure you typed
+                - code [ref=e34]: console.log
+                - text: exactly (spelling and dots matter).
+              - listitem [ref=e35]:
+                - text: "Make sure your text is inside quotes:"
+                - code [ref=e36]: "\" \""
+                - text: .
+          - generic [ref=e37]:
+            - heading "Step 2" [level=4] [ref=e38]
+            - paragraph [ref=e39]: "Replace the text inside the quotes, then press Run again:"
+        - generic [ref=e41]:
+          - generic [ref=e45]: Console
+          - generic [ref=e46]:
+            - generic [ref=e49]: ">"
+            - generic [ref=e51]:
+              - generic [ref=e52]: Output
+              - generic [ref=e53]: "?"
+            - generic [ref=e54]:
+              - paragraph [ref=e55]: "> SYSTEM INITIALIZED"
+              - paragraph [ref=e56]: "> LOADING TUTORIAL..."
+      - region "The signal does not comfort." [ref=e57]:
+        - generic [ref=e59]:
+          - paragraph [ref=e60]: Chapter 02 / Coming to Terms
+          - heading "The signal does not comfort." [level=2] [ref=e61]
+  - contentinfo [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e65]:
+        - img [ref=e66]
+        - generic [ref=e120]: FREQUENCY
+      - generic "Diagnostic message display" [ref=e121]:
+        - generic [ref=e124]: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+      - generic "Layer controls" [ref=e125]:
+        - button "Raise console layer" [ref=e126] [cursor=pointer]: ↑
+        - button "Lower console layer" [ref=e127] [cursor=pointer]: ↓
+      - generic [ref=e128]:
+        - generic [ref=e130]:
+          - checkbox "Sharpen focus"
+        - generic [ref=e133]:
+          - checkbox "Reduce jitter"
+        - generic [ref=e136]:
+          - checkbox "Re-grid"
+        - generic [ref=e139]:
+          - checkbox "Fade noise"

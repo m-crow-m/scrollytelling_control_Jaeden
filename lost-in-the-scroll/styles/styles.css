@@ -116,7 +116,7 @@ p {
 }
 
 .scroll-trigger {
-    height: 540vh;
+    height: 960vh;
 }
 
 #viewport-content {
@@ -174,6 +174,135 @@ p {
     padding: var(--layout-padding);
     align-items: start;
     justify-content: center;
+}
+
+.chapter-two {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 30;
+}
+
+.chapter-two__veil {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 50% 50%, rgba(242, 242, 242, 0.03), transparent 28%),
+        linear-gradient(180deg, rgba(4, 5, 7, 0.12), rgba(4, 5, 7, 0.88) 34%, rgba(3, 4, 5, 0.985) 100%);
+    opacity: 0;
+}
+
+.chapter-two__glitch {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.chapter-two__fragments {
+    position: absolute;
+    inset: -2%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 8px;
+    opacity: 0;
+    transform: scale(1.01);
+}
+
+.chapter-two__fragment {
+    background: rgba(8, 10, 12, 0.18);
+    backdrop-filter: blur(7px) saturate(0.5) brightness(0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.035);
+    border-left: 1px solid rgba(255, 255, 255, 0.025);
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.025);
+    clip-path: polygon(0 18%, 18% 18%, 18% 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 0;
+    transform-origin: 50% 50%;
+    will-change: transform, opacity, filter;
+}
+
+.chapter-two__fragment:nth-child(3n) {
+    clip-path: polygon(0 0, 82% 0, 82% 18%, 100% 18%, 100% 100%, 0 100%);
+}
+
+.chapter-two__fragment:nth-child(4n) {
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 82% 82%, 82% 100%, 0 100%);
+}
+
+.chapter-two__glitch-columns,
+.chapter-two__glitch-corners,
+.chapter-two__glitch-scan {
+    display: none;
+}
+
+.chapter-two__stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+    padding: 0 4vw;
+}
+
+.chapter-two__label,
+.chapter-two__line {
+    opacity: 0;
+    transform: translateY(16px);
+}
+
+.chapter-two__label {
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    translate: -50% 0;
+    color: var(--color-accent);
+    font-family: var(--pixel-font);
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.chapter-two__copy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: min(10ch, calc(100vw - 8rem));
+    min-height: 0;
+    display: grid;
+    place-items: center;
+}
+
+.chapter-two__line {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    width: 100%;
+    translate: -50% -50%;
+    transform-origin: 50% 50%;
+    text-align: center;
+    color: rgba(242, 242, 242, 0.95);
+    font-size: clamp(6rem, 15vw, 12.5rem);
+    line-height: 0.82;
+    letter-spacing: -0.075em;
+    text-wrap: balance;
+    text-shadow: 0 20px 80px rgba(0, 0, 0, 0.36);
+    will-change: transform, opacity, filter;
+}
+
+.chapter-two__line--incoming {
+    color: rgba(242, 242, 242, 0.78);
 }
 
 .tutorial-column {
@@ -635,6 +764,30 @@ body.phase-collapse #control-panel {
     border-color: rgba(214, 29, 0, 0.18);
 }
 
+body.chapter-two-active .tutorial-layout {
+    opacity: 0.22;
+}
+
+body.chapter-two-active .console-window {
+    box-shadow: 0 30px 72px rgba(0, 0, 0, 0.24);
+}
+
+body.chapter-two-active #grid-overlay {
+    opacity: 0.12;
+}
+
+body.chapter-two-active .chapter-two {
+    pointer-events: auto;
+}
+
+body.chapter-two-active .chapter-two__veil {
+    opacity: 1;
+}
+
+body.chapter-two-transition .chapter-two__glitch {
+    opacity: 1;
+}
+
 body.mode-light .status-screen {
     background:
         linear-gradient(180deg, rgba(235, 238, 240, 0.96), rgba(214, 219, 223, 0.98)),
@@ -766,6 +919,26 @@ body.mode-glitch #viewport-content {
         width: 100%;
     }
 
+    .chapter-two {
+        padding: 2rem;
+    }
+
+    .chapter-two__stage {
+        padding: 0 1.5rem;
+    }
+
+    .chapter-two__label {
+        top: 20%;
+    }
+
+    .chapter-two__copy {
+        width: min(9ch, calc(100vw - 3rem));
+    }
+
+    .chapter-two__line {
+        font-size: clamp(4.5rem, 16vw, 8rem);
+    }
+
     .panel-inner {
         flex-wrap: wrap;
         justify-content: center;
@@ -836,5 +1009,19 @@ body.mode-glitch #viewport-content {
         transform: none;
         animation: none;
         transition: none;
+    }
+
+    .chapter-two,
+    .chapter-two__veil,
+    .chapter-two__glitch,
+    .chapter-two__fragments,
+    .chapter-two__fragment,
+    .chapter-two__glitch-columns,
+    .chapter-two__glitch-corners,
+    .chapter-two__glitch-scan,
+    .chapter-two__label,
+    .chapter-two__line {
+        transition: none;
+        animation: none;
     }
 }

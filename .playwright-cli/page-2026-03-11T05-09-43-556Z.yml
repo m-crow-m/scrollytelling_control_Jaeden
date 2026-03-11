@@ -1,0 +1,73 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: NOISE
+        - generic [ref=e6]: "0.34"
+      - generic [ref=e7]:
+        - generic [ref=e8]: FREQUENCY
+        - generic [ref=e9]: "3.6"
+      - generic [ref=e10]:
+        - generic [ref=e11]: FOCUS
+        - generic [ref=e12]: DRIFT
+  - main [ref=e13]:
+    - generic [ref=e15]:
+      - complementary:
+        - img
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - heading "JavaScript" [level=1] [ref=e18]
+          - 'heading "T>6 D}L|_1" [level=2] [ref=e19]'
+          - generic [ref=e20]:
+            - heading "E.E ,5F L35FN#1" [level=3] [ref=e21]
+            - paragraph [ref=e22]: "Ho53[8 rDF 86> 3Cn< }f 2A12_%Bi?t a1& 4CG ;&x? &pp|B, NJ ,#3 ;#!K?lK( 5DKI 2# :,e !%B|2,1 _>! #5 CH*9| th27 9oC4 c$@5 (C ?H})1?26 (]78M0(."
+          - generic [ref=e23]:
+            - heading "4D$[ &" [level=4] [ref=e24]
+            - paragraph [ref=e25]: "K$^8 }J*+ I* I{? !I6)]r )?B {_]s] L|@7"
+            - generic [ref=e26]: "12DI45CE9;EI\"^9J&oD 6}7,.GM)]"
+            - paragraph [ref=e27]: "#55 26]uG[ ?H4 <>?. +n *G^ 1{]673^ ,M?5u1F"
+            - generic [ref=e28]: "IN*L6! #F&ld!"
+          - generic [ref=e29]:
+            - paragraph [ref=e30]: "}9 @@u &|#’5 s,I 7N.H7@4]J D5. {5)@( :%e)<s<"
+            - list [ref=e31]:
+              - listitem [ref=e32]: "0a^? *B?3 ^[? ty6M{ 1M2#69$2_{] |N1G9_: 8#K&C&LB# an8 LN4_ J_K@9E+3"
+              - listitem [ref=e33]: "0E_e sBCe B@L. ,0xD %s 2.K]9L qK4+E*H E >{"
+          - generic [ref=e34]:
+            - heading "E.14 3" [level=4] [ref=e35]
+            - paragraph [ref=e36]: "07I+38G BK+ @}9_ %$67L; )1> H1!M%B? 3*,% 575sI <7K +0{+#:"
+        - generic [ref=e38]:
+          - generic [ref=e42]: Console
+          - generic [ref=e43]:
+            - generic [ref=e45]:
+              - generic [ref=e46]: ">"
+              - generic [ref=e47]: console.log("Hello, world!");
+            - generic [ref=e49]:
+              - generic [ref=e50]: Output
+              - generic [ref=e51]: "?"
+            - generic [ref=e52]:
+              - paragraph [ref=e53]: "> SYSTEM INITIALIZED"
+              - paragraph [ref=e54]: "> LOADING TUTORIAL..."
+              - paragraph [ref=e55]: "> SIGNAL LOSS IN TUTORIAL_LAYER"
+      - region "The signal does not comfort." [ref=e56]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]: Chapter 02 / Coming to Terms
+          - heading "The signal does not comfort." [level=2] [ref=e60]
+  - contentinfo [ref=e61]:
+    - generic [ref=e62]:
+      - generic [ref=e64]:
+        - img [ref=e65]
+        - generic [ref=e119]: FREQUENCY
+      - generic "Diagnostic message display" [ref=e120]:
+        - generic [ref=e123]: In the middle of the journey of our life I found myself within a dark woods where the straight way was lost.
+      - generic "Layer controls" [ref=e124]:
+        - button "Raise console layer" [ref=e125] [cursor=pointer]: ↑
+        - button "Lower console layer" [ref=e126] [cursor=pointer]: ↓
+      - generic [ref=e127]:
+        - generic [ref=e129]:
+          - checkbox "Sharpen focus"
+        - generic [ref=e132]:
+          - checkbox "Reduce jitter"
+        - generic [ref=e135]:
+          - checkbox "Re-grid"
+        - generic [ref=e138]:
+          - checkbox "Fade noise"
