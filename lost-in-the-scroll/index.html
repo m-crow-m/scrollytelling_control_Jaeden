@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Blueprint | CROW</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Workbench&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/tokens.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -33,123 +34,211 @@
         </div>
     </header>
 
-    <main id="scrolly-container">
-        <div class="scroll-trigger" aria-hidden="true"></div>
-
-        <div id="viewport-content">
-            <aside class="rf-meter-shell" aria-hidden="true">
-                <svg id="rfMeter" width="520" height="120" viewBox="0 0 520 120" role="img" aria-label="Radio frequency meter">
-                    <defs>
-                        <clipPath id="rfClip">
-                            <rect x="14" y="20" width="492" height="74" rx="12" />
-                        </clipPath>
-                        <linearGradient id="rfFade" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0" stop-color="currentColor" stop-opacity="0.10"/>
-                            <stop offset="0.5" stop-color="currentColor" stop-opacity="0.02"/>
-                            <stop offset="1" stop-color="currentColor" stop-opacity="0.10"/>
-                        </linearGradient>
-                    </defs>
-                    <rect x="10" y="16" width="500" height="82" rx="14" fill="none" stroke="currentColor" stroke-width="2" opacity="0.75"/>
-                    <rect x="14" y="20" width="492" height="74" rx="12" fill="url(#rfFade)" stroke="currentColor" stroke-width="1" opacity="0.35"/>
-                    <line x1="14" y1="82" x2="506" y2="82" stroke="currentColor" stroke-width="1" opacity="0.18"/>
-                    <g opacity="0.22">
-                        <line x1="50" y1="90" x2="50" y2="94" stroke="currentColor" />
-                        <line x1="90" y1="90" x2="90" y2="94" stroke="currentColor" />
-                        <line x1="130" y1="90" x2="130" y2="94" stroke="currentColor" />
-                        <line x1="170" y1="90" x2="170" y2="94" stroke="currentColor" />
-                        <line x1="210" y1="90" x2="210" y2="94" stroke="currentColor" />
-                        <line x1="250" y1="90" x2="250" y2="94" stroke="currentColor" />
-                        <line x1="290" y1="90" x2="290" y2="94" stroke="currentColor" />
-                        <line x1="330" y1="90" x2="330" y2="94" stroke="currentColor" />
-                        <line x1="370" y1="90" x2="370" y2="94" stroke="currentColor" />
-                        <line x1="410" y1="90" x2="410" y2="94" stroke="currentColor" />
-                        <line x1="450" y1="90" x2="450" y2="94" stroke="currentColor" />
-                        <line x1="490" y1="90" x2="490" y2="94" stroke="currentColor" />
-                    </g>
-                    <g class="rf-bars" clip-path="url(#rfClip)"></g>
-                    <line class="rf-peak" x1="260" y1="22" x2="260" y2="92" stroke="currentColor" stroke-width="1" opacity="0.12"/>
-                </svg>
-            </aside>
-            <div class="tutorial-layout">
-                <div class="tutorial-column" id="tutorial-text-container">
-                    <h1 class="pixel-font" id="main-title">JavaScript</h1>
-                    <h2 id="sub-title">The Basics</h2>
-
-                    <div class="tutorial-section">
-                        <h3>1.1 The Console</h3>
-                        <p>You’ll run one line of JavaScript and see text appear in the console. This is the fastest way
-                            to check that your code is actually running.</p>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main id="scrolly-container">
+                <section class="story-section story-section--lead" id="lead-section" aria-labelledby="lead-title">
+                    <div class="section-shell section-shell--lead">
+                        <p class="section-kicker pixel-font">Signal Intake / Section 01</p>
+                        <h1 class="lead-title" id="lead-title">The Blueprint</h1>
+                        <p class="lead-copy">
+                            It opens like a lesson because that is how trust enters the room: one command, one expected
+                            result, one clean demonstration that the system is still willing to explain itself.
+                        </p>
+                        <p class="lead-copy lead-copy--secondary">
+                            Then the interface begins to misbehave. The tutorial remains visible, but the surface starts
+                            to shake loose from its own instructions.
+                        </p>
                     </div>
+                </section>
 
-                    <div class="tutorial-step">
-                        <h4>Step 1</h4>
-                        <p>Type this in the editor and press Run:</p>
-                        <div class="code-snippet">console.log("Hello, world!");</div>
+                <section class="story-section story-section--showpiece" id="showpiece-section" aria-labelledby="main-title">
+                    <div id="viewport-content">
+                        <aside class="rf-meter-shell" aria-hidden="true">
+                            <svg id="rfMeter" width="520" height="120" viewBox="0 0 520 120" role="img" aria-label="Radio frequency meter">
+                                <defs>
+                                    <clipPath id="rfClip">
+                                        <rect x="14" y="20" width="492" height="74" rx="12" />
+                                    </clipPath>
+                                    <linearGradient id="rfFade" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0" stop-color="currentColor" stop-opacity="0.10"/>
+                                        <stop offset="0.5" stop-color="currentColor" stop-opacity="0.02"/>
+                                        <stop offset="1" stop-color="currentColor" stop-opacity="0.10"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="10" y="16" width="500" height="82" rx="14" fill="none" stroke="currentColor" stroke-width="2" opacity="0.75"/>
+                                <rect x="14" y="20" width="492" height="74" rx="12" fill="url(#rfFade)" stroke="currentColor" stroke-width="1" opacity="0.35"/>
+                                <line x1="14" y1="82" x2="506" y2="82" stroke="currentColor" stroke-width="1" opacity="0.18"/>
+                                <g opacity="0.22">
+                                    <line x1="50" y1="90" x2="50" y2="94" stroke="currentColor" />
+                                    <line x1="90" y1="90" x2="90" y2="94" stroke="currentColor" />
+                                    <line x1="130" y1="90" x2="130" y2="94" stroke="currentColor" />
+                                    <line x1="170" y1="90" x2="170" y2="94" stroke="currentColor" />
+                                    <line x1="210" y1="90" x2="210" y2="94" stroke="currentColor" />
+                                    <line x1="250" y1="90" x2="250" y2="94" stroke="currentColor" />
+                                    <line x1="290" y1="90" x2="290" y2="94" stroke="currentColor" />
+                                    <line x1="330" y1="90" x2="330" y2="94" stroke="currentColor" />
+                                    <line x1="370" y1="90" x2="370" y2="94" stroke="currentColor" />
+                                    <line x1="410" y1="90" x2="410" y2="94" stroke="currentColor" />
+                                    <line x1="450" y1="90" x2="450" y2="94" stroke="currentColor" />
+                                    <line x1="490" y1="90" x2="490" y2="94" stroke="currentColor" />
+                                </g>
+                                <g class="rf-bars" clip-path="url(#rfClip)"></g>
+                                <line class="rf-peak" x1="260" y1="22" x2="260" y2="92" stroke="currentColor" stroke-width="1" opacity="0.12"/>
+                            </svg>
+                        </aside>
+                        <div class="tutorial-layout">
+                            <div class="tutorial-column" id="tutorial-text-container">
+                                <h1 class="pixel-font" id="main-title">JavaScript</h1>
+                                <h2 id="sub-title">The Basics</h2>
 
-                        <p>You should see this in the console output:</p>
-                        <div class="code-snippet output">Hello, world!</div>
-                    </div>
+                                <div class="tutorial-section">
+                                    <h3>1.1 The Console</h3>
+                                    <p>You’ll run one line of JavaScript and see text appear in the console. This is the fastest way
+                                        to check that your code is actually running.</p>
+                                </div>
 
-                    <div class="tutorial-troubleshoot">
-                        <p><strong>If you don’t see anything, try these checks:</strong></p>
-                        <ul>
-                            <li>Make sure you typed <code>console.log</code> exactly (spelling and dots matter).</li>
-                            <li>Make sure your text is inside quotes: <code>" "</code>.</li>
-                        </ul>
-                    </div>
+                                <div class="tutorial-step">
+                                    <h4>Step 1</h4>
+                                    <p>Type this in the editor and press Run:</p>
+                                    <div class="code-snippet">console.log("Hello, world!");</div>
 
-                    <div class="tutorial-step">
-                        <h4>Step 2</h4>
-                        <p>Replace the text inside the quotes, then press Run again:</p>
-                    </div>
-                </div>
+                                    <p>You should see this in the console output:</p>
+                                    <div class="code-snippet output">Hello, world!</div>
+                                </div>
 
-                <div class="console-column">
-                    <div class="console-window" id="main-console">
-                        <div class="console-header">
-                            <div class="console-controls">
-                                <span class="dot red"></span>
-                            </div>
-                            <div class="console-title">Console</div>
-                            <div class="console-action-icon"></div>
-                        </div>
-                        <div class="console-body">
-                            <div class="console-input-area">
-                                <div class="input-line">
-                                    <span class="prompt">></span>
-                                    <span class="input-text" id="console-typing"></span>
-                                    <span class="cursor"></span>
+                                <div class="tutorial-troubleshoot">
+                                    <p><strong>If you don’t see anything, try these checks:</strong></p>
+                                    <ul>
+                                        <li>Make sure you typed <code>console.log</code> exactly (spelling and dots matter).</li>
+                                        <li>Make sure your text is inside quotes: <code>" "</code>.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <h4>Step 2</h4>
+                                    <p>Replace the text inside the quotes, then press Run again:</p>
                                 </div>
                             </div>
-                            <div class="console-divider">
-                                <span>Output</span>
-                                <span class="help-icon">?</span>
+
+                            <div class="console-column">
+                                <div class="console-window" id="main-console">
+                                    <div class="console-header">
+                                        <div class="console-controls">
+                                            <span class="dot red"></span>
+                                        </div>
+                                        <div class="console-title">Console</div>
+                                        <div class="console-action-icon"></div>
+                                    </div>
+                                    <div class="console-body">
+                                        <div class="console-input-area">
+                                            <div class="input-line">
+                                                <span class="prompt">></span>
+                                                <span class="input-text" id="console-typing"></span>
+                                                <span class="cursor"></span>
+                                            </div>
+                                        </div>
+                                        <div class="console-divider">
+                                            <span>Output</span>
+                                            <span class="help-icon">?</span>
+                                        </div>
+                                        <div class="console-output-area" id="console-output">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="console-output-area" id="console-output">
+                        </div>
+
+                        <section class="chapter-two" id="chapter-two" aria-labelledby="chapter-two-line">
+                            <div class="chapter-two__veil"></div>
+                            <div class="chapter-two__freeze" aria-hidden="true">
+                                <div class="chapter-two__freeze-base" id="chapter-two-freeze-base"></div>
+                                <div class="chapter-two__fragments" id="chapter-two-fragments"></div>
+                            </div>
+                            <div class="chapter-two__stage">
+                                <p class="chapter-two__label">Chapter 02 / Coming to Terms</p>
+                                <div class="chapter-two__copy">
+                                    <h2 class="chapter-two__line" id="chapter-two-line">
+                                        The signal does not comfort.
+                                    </h2>
+                                    <h2 class="chapter-two__line chapter-two__line--incoming" aria-hidden="true"></h2>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <section class="story-section story-section--relay story-section--visual story-section--section-three" id="relay-visual-a" aria-label="Section 03 visual scene">
+                    <div class="section-shell section-shell--visual section-shell--section-three">
+                        <div class="section-three-scene" id="section-three-scene">
+                            <div class="section-three-stage">
+                                <div class="section-three-flash"></div>
+                                <div class="section-three-screen-shell">
+                                    <div class="section-three-screen-glow"></div>
+                                    <div class="section-three-screen">
+                                        <img class="section-three-logo" src="assets/ChatLogo.png" alt="ChatGPT logo">
+                                    </div>
+                                </div>
+                                <div class="section-three-desk-shadow"></div>
+                                <svg class="section-three-head" viewBox="0 0 193 307" aria-hidden="true">
+                                    <path
+                                        id="section-three-head-path"
+                                        d="M112.488 0.912109C113.461 5.28957 118.259 14.7924 129.617 17.5342C141.048 20.2934 149.45 16.0447 152.169 13.6455L152.896 14.3252C151.014 16.7805 148.761 20.8782 148.106 25.1709C147.456 29.4368 148.383 33.8553 152.797 37.1182C157.363 40.4932 161.195 42.4266 164.118 43.4746C167.058 44.5288 169.04 44.6737 169.918 44.5273L170.935 44.3574L170.438 45.2617C169.544 46.886 168.471 49.5737 168.159 52.3271C167.847 55.0855 168.307 57.8054 170.336 59.6504C172.416 61.5409 175.073 62.1878 177.592 62.208C180.113 62.2282 182.447 61.6196 183.81 61.0586L184.998 60.5684L184.452 61.7324C183.191 64.4221 181.394 67.9955 180.496 71.3984C179.59 74.8309 179.666 77.841 181.82 79.6367C184.209 81.6269 185.417 82.5903 186.386 83.1279C187.319 83.6462 188.027 83.768 189.49 84.0117L189.582 84.0273L191.047 84.2715L189.732 84.9629C186.654 86.5831 180.612 91.8704 180.999 99.9971L181.024 100.521H180.792C180.802 100.589 180.812 100.657 180.821 100.725C181.368 100.591 181.929 100.521 182.5 100.521C188.299 100.521 193 107.684 193 116.521C193 125.357 188.299 132.521 182.5 132.521C182.018 132.521 181.545 132.469 181.08 132.373C177.737 159.167 165.489 182.535 148 198.147V306.521H51V203.045C30.3345 187.671 15.632 162.135 11.9189 132.373C11.4547 132.469 10.9814 132.521 10.5 132.521C4.70101 132.521 0 125.357 0 116.521C0 107.684 4.70101 100.521 10.5 100.521C11.0711 100.521 11.6314 100.591 12.1777 100.725C12.5983 97.7562 13.128 94.8317 13.7627 91.957C13.4853 87.6914 12.2596 82.2303 9.05957 76.2568C7.19593 72.778 5.77174 70.7067 4.875 69.5264C4.42652 68.9361 4.10859 68.566 3.92188 68.3428C3.8757 68.2876 3.83307 68.2365 3.79883 68.1924C3.77037 68.1557 3.72493 68.0956 3.69141 68.0303C3.67762 68.0034 3.63656 67.9222 3.62891 67.8135C3.62463 67.7524 3.62989 67.6617 3.67383 67.5645C3.72067 67.461 3.79709 67.3828 3.88281 67.333C4.0274 67.2492 4.1673 67.2624 4.20117 67.2656C4.25372 67.2707 4.29822 67.2826 4.32422 67.29C4.41402 67.3157 4.54582 67.3711 4.65723 67.417C4.78717 67.4705 4.95185 67.5378 5.1543 67.6113C5.55845 67.7581 6.12137 67.9335 6.85352 68.0762C8.3173 68.3614 10.4761 68.5176 13.418 68.0273C15.625 67.6594 17.6608 66.0033 19.5098 63.4141C21.3519 60.8344 22.9561 57.4011 24.3174 53.626C27.0388 46.0789 28.7569 37.2669 29.5039 31.457L29.5684 30.959L30.0654 31.0244C31.2781 31.1861 33.3383 31.2858 35.5332 31.0488C37.736 30.8109 40.0193 30.24 41.7227 29.1045C42.5424 28.5579 43.3757 27.6124 44.1885 26.3945C44.9966 25.1836 45.7626 23.7371 46.458 22.2246C47.8491 19.199 48.9408 15.9491 49.5186 13.8857L49.7402 13.0918L50.3418 13.6553C51.6485 14.8803 53.8857 16.6257 56.3262 17.8623C58.7924 19.1118 61.3351 19.7758 63.3291 19.0508C64.3464 18.6808 65.52 17.9004 66.7666 16.8398C68.0067 15.7848 69.2898 14.4775 70.5264 13.0879C72.9996 10.3086 75.2609 7.22782 76.584 5.24316L77.0059 4.60938L77.4199 5.24902C78.3026 6.61311 80.0816 8.66349 82.5186 10.3193C84.9524 11.973 88.0119 13.2135 91.4717 13.0215C94.9268 12.8295 98.998 10.7732 102.729 8.20801C106.443 5.65527 109.742 2.65386 111.639 0.674805L112.285 0L112.488 0.912109Z"
+                                        data-down-path="M112.488 0.912109C113.461 5.28957 118.259 14.7924 129.617 17.5342C141.048 20.2934 149.45 16.0447 152.169 13.6455L152.896 14.3252C151.014 16.7805 148.761 20.8782 148.106 25.1709C147.456 29.4368 148.383 33.8553 152.797 37.1182C157.363 40.4932 161.195 42.4266 164.118 43.4746C167.058 44.5288 169.04 44.6737 169.918 44.5273L170.935 44.3574L170.438 45.2617C169.544 46.886 168.471 49.5737 168.159 52.3271C167.847 55.0855 168.307 57.8054 170.336 59.6504C172.416 61.5409 175.073 62.1878 177.592 62.208C180.113 62.2282 182.447 61.6196 183.81 61.0586L184.998 60.5684L184.452 61.7324C183.191 64.4221 181.394 67.9955 180.496 71.3984C179.59 74.8309 179.666 77.841 181.82 79.6367C184.209 81.6269 185.417 82.5903 186.386 83.1279C187.319 83.6462 188.027 83.768 189.49 84.0117L189.582 84.0273L191.047 84.2715L189.732 84.9629C186.654 86.5831 180.612 91.8704 180.999 99.9971L181.024 100.521H180.792C180.802 100.589 180.812 100.657 180.821 100.725C181.368 100.591 181.929 100.521 182.5 100.521C188.299 100.521 193 107.684 193 116.521C193 125.357 188.299 132.521 182.5 132.521C182.018 132.521 181.545 132.469 181.08 132.373C177.737 159.167 165.489 182.535 148 198.147V306.521H51V203.045C30.3345 187.671 15.632 162.135 11.9189 132.373C11.4547 132.469 10.9814 132.521 10.5 132.521C4.70101 132.521 0 125.357 0 116.521C0 107.684 4.70101 100.521 10.5 100.521C11.0711 100.521 11.6314 100.591 12.1777 100.725C12.5983 97.7562 13.128 94.8317 13.7627 91.957C13.4853 87.6914 12.2596 82.2303 9.05957 76.2568C7.19593 72.778 5.77174 70.7067 4.875 69.5264C4.42652 68.9361 4.10859 68.566 3.92188 68.3428C3.8757 68.2876 3.83307 68.2365 3.79883 68.1924C3.77037 68.1557 3.72493 68.0956 3.69141 68.0303C3.67762 68.0034 3.63656 67.9222 3.62891 67.8135C3.62463 67.7524 3.62989 67.6617 3.67383 67.5645C3.72067 67.461 3.79709 67.3828 3.88281 67.333C4.0274 67.2492 4.1673 67.2624 4.20117 67.2656C4.25372 67.2707 4.29822 67.2826 4.32422 67.29C4.41402 67.3157 4.54582 67.3711 4.65723 67.417C4.78717 67.4705 4.95185 67.5378 5.1543 67.6113C5.55845 67.7581 6.12137 67.9335 6.85352 68.0762C8.3173 68.3614 10.4761 68.5176 13.418 68.0273C15.625 67.6594 17.6608 66.0033 19.5098 63.4141C21.3519 60.8344 22.9561 57.4011 24.3174 53.626C27.0388 46.0789 28.7569 37.2669 29.5039 31.457L29.5684 30.959L30.0654 31.0244C31.2781 31.1861 33.3383 31.2858 35.5332 31.0488C37.736 30.8109 40.0193 30.24 41.7227 29.1045C42.5424 28.5579 43.3757 27.6124 44.1885 26.3945C44.9966 25.1836 45.7626 23.7371 46.458 22.2246C47.8491 19.199 48.9408 15.9491 49.5186 13.8857L49.7402 13.0918L50.3418 13.6553C51.6485 14.8803 53.8857 16.6257 56.3262 17.8623C58.7924 19.1118 61.3351 19.7758 63.3291 19.0508C64.3464 18.6808 65.52 17.9004 66.7666 16.8398C68.0067 15.7848 69.2898 14.4775 70.5264 13.0879C72.9996 10.3086 75.2609 7.22782 76.584 5.24316L77.0059 4.60938L77.4199 5.24902C78.3026 6.61311 80.0816 8.66349 82.5186 10.3193C84.9524 11.973 88.0119 13.2135 91.4717 13.0215C94.9268 12.8295 98.998 10.7732 102.729 8.20801C106.443 5.65527 109.742 2.65386 111.639 0.674805L112.285 0L112.488 0.912109Z"
+                                    />
+                                </svg>
+                                <div class="section-three-desk"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </section>
 
-            <section class="chapter-two" id="chapter-two" aria-labelledby="chapter-two-line">
-                <div class="chapter-two__veil"></div>
-                <div class="chapter-two__freeze" aria-hidden="true">
-                    <div class="chapter-two__freeze-base" id="chapter-two-freeze-base"></div>
-                    <div class="chapter-two__fragments" id="chapter-two-fragments"></div>
-                </div>
-                <div class="chapter-two__stage">
-                    <p class="chapter-two__label">Chapter 02 / Coming to Terms</p>
-                    <div class="chapter-two__copy">
-                        <h2 class="chapter-two__line" id="chapter-two-line">
-                            The signal does not comfort.
-                        </h2>
-                        <h2 class="chapter-two__line chapter-two__line--incoming" aria-hidden="true"></h2>
+                <section class="story-section story-section--relay story-section--text story-section--section-four-entry" id="relay-text-a" aria-label="Section 04 character field">
+                    <div class="section-shell section-shell--section-four">
+                        <div class="section-four-stage">
+                            <pre class="section-four-matrix" id="section-four-matrix" aria-hidden="true"></pre>
+                            <p class="section-four-focus" id="section-four-focus" aria-hidden="true">I wish I was you.</p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+
+                <section class="story-section story-section--relay story-section--visual" id="relay-visual-b" aria-labelledby="relay-visual-b-title">
+                    <div class="section-shell section-shell--visual section-shell--visual-alt">
+                        <p class="section-kicker pixel-font">Afterimage / Section 05</p>
+                        <div class="visual-stack visual-stack--right" data-speed="0.88">
+                            <article class="visual-card visual-card--secondary" data-speed="1.12">
+                                <p class="visual-card__label">Carrier Field</p>
+                                <p>
+                                    Once the noise settles, the remaining shapes feel heavier. They no longer explain
+                                    themselves. They only persist.
+                                </p>
+                            </article>
+                            <article class="visual-card visual-card--primary" data-lag="0.16">
+                                <p class="visual-card__label">Residual Frame</p>
+                                <h2 id="relay-visual-b-title">Clarity arrives colder than the lesson that preceded it.</h2>
+                                <p>
+                                    The final images should not feel triumphant. They should feel exact, stripped down,
+                                    and unwilling to flatter the viewer.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="story-section story-section--relay story-section--text story-section--text-outro" id="relay-text-b" aria-labelledby="relay-text-b-title">
+                    <div class="section-shell section-shell--text section-shell--text-outro">
+                        <p class="section-kicker pixel-font">Open Channel / Section 06</p>
+                        <h2 id="relay-text-b-title">This is the handoff point.</h2>
+                        <p>
+                            The page now has the sectioned structure it needs, but it still reads like a system in motion
+                            rather than a conventional chapter list. From here, new visual and text sections can slot in
+                            after Chapter 02 without breaking the existing language.
+                        </p>
+                    </div>
+                </section>
+            </main>
         </div>
-    </main>
+    </div>
 
     <footer id="control-panel" class="glass-panel hidden">
         <div class="panel-inner">
@@ -267,6 +356,12 @@
                 <button type="button" class="depth-button" id="depth-down" aria-label="Lower console layer">↓</button>
             </div>
 
+            <div class="theme-module" aria-label="Theme mode controls">
+                <button type="button" class="theme-button" data-theme-value="system">SYS</button>
+                <button type="button" class="theme-button" data-theme-value="dark">DARK</button>
+                <button type="button" class="theme-button" data-theme-value="light">LIGHT</button>
+            </div>
+
             <div class="toggles-module">
                 <div class="toggle-group">
                     <label class="toggle">
@@ -296,7 +391,9 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollSmoother.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

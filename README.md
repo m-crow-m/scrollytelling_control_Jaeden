@@ -1,55 +1,23 @@
-# Project 2 Student Hub: Lost in the Scroll
+# The Blueprint
 
-Student-facing repo for final project execution and turn-in.
+An interactive scrollytelling webpage that uses a corrupted JavaScript tutorial as a metaphor for signal loss, breakdown, and forced clarity. The page starts as an instructional console lesson and gradually destabilizes into a controlled systems failure.
 
-## Why This Repo Uses Issues
+Live URL: https://m-crow-m.github.io/scrollytelling_control_Jaeden/
 
-Issues are required because they mirror real development workflow.
+Repository URL: https://github.com/m-crow-m/scrollytelling_control_Jaeden
 
-You will use them to:
+Reflection URL: https://m-crow-m.github.io/scrollytelling_control_Jaeden/reflection.html
 
-- plan and sequence work
-- track progress publicly
-- report blockers with evidence
-- verify final completion
+## Tech Stack
 
-## Use This Template
+- HTML
+- CSS
+- JavaScript
+- GSAP
 
-If you already completed template setup from the Canvas assignment, skip this section and go to **Start Here**.
+## Implementation Notes
 
-If you have not created your repo yet:
-
-1. Click [Use this template](https://github.com/sicxz/desn378-project-2-student-hub/generate)
-2. Create a new repo named `scrollytelling-[project-title]-[firstname]`
-3. Keep it `Public`
-4. Clone your new repo locally and start building
-
-After your repo is created:
-
-5. In your own copied repo, delete this `Use This Template` section from `README.md`.
-
-## Start Here
-
-1. Read [Start Here](docs/01-start-here.md) and follow the step-by-step issue setup
-2. Open [GSAP Scroll](https://gsap.com/scroll/) and study examples
-3. Track progress using [Progress Tracking Options](docs/08-progress-tracking-options.md)
-4. Build, test, and check items off as you complete them
-5. Submit using [Final Turn-In Spec](docs/03-final-turn-in-spec.md)
-
-## What Is In This Repo
-
-- [Project Completion Checklist (Reference)](docs/02-project-completion-checklist.md)
-- [Final Turn-In Spec](docs/03-final-turn-in-spec.md)
-- [Project Structure Suggestion](docs/04-project-structure-suggestion.md)
-- [Resources](docs/05-resources.md)
-- [Copy This Template](docs/06-copy-this-template.md)
-- [Kickoff Assignment](docs/07-assignment-kickoff-template-and-tracking.md)
-- [Progress Tracking Options](docs/08-progress-tracking-options.md)
-- GitHub issue templates for progress tracking and blocker reporting
-
-## How To Use Issues
-
-1. Create `Project 2 Master Checklist` issue first.
-2. Create all required sub-issues from templates.
-3. Link sub-issues back into the master issue.
-4. Use `Blocker Report` if stuck for more than 20 minutes.
+- Tokens are defined in [`lost-in-the-scroll/styles/tokens.css`](lost-in-the-scroll/styles/tokens.css) and feed the visual system through shared CSS custom properties.
+- Motion is driven with GSAP timelines, tweens, and scroll-linked state updates to preserve the current visual experience.
+- Reduced-motion handling is included so the page remains readable when animation-heavy effects are bypassed.
+- The root [`index.html`](index.html) redirects to the project entry in [`lost-in-the-scroll/index.html`](lost-in-the-scroll/index.html).
