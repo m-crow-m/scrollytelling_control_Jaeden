@@ -279,7 +279,7 @@ p {
     letter-spacing: -0.05em;
 }
 
-.story-section--text p + p {
+.story-section--text p+p {
     margin-top: 1rem;
 }
 
@@ -399,7 +399,9 @@ p {
 }
 
 @keyframes section-three-logo-glitch {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate3d(0, 0, 0);
         filter: saturate(0) contrast(0.8) opacity(0.78);
     }
@@ -510,11 +512,40 @@ p {
     font-family: "IBM Plex Mono", "SFMono-Regular", "Menlo", monospace;
     font-size: clamp(0.58rem, 0.88vw, 0.82rem);
     line-height: 0.84;
-    letter-spacing: 0;
+    letter-spacing: var(--glitch-tracking, 0px);
     white-space: pre;
     user-select: none;
     pointer-events: none;
     overflow: hidden;
+    position: relative;
+    filter: var(--glitch-blur, blur(0px));
+    transform: scale(var(--glitch-scale, 1));
+    will-change: letter-spacing, filter, transform;
+}
+
+.section-four-matrix::before,
+.section-four-matrix::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: var(--glitch-ghost-opacity, 0);
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+
+.section-four-matrix::before {
+    color: #f00;
+    transform: translate(var(--glitch-x, 0px), var(--glitch-y, 0px));
+    z-index: -1;
+}
+
+.section-four-matrix::after {
+    color: #0ff;
+    transform: translate(calc(var(--glitch-x, 0px) * -1), calc(var(--glitch-y, 0px) * -1));
+    z-index: -2;
 }
 
 .section-four-focus {
@@ -534,6 +565,201 @@ p {
     pointer-events: none;
     user-select: none;
     z-index: 2;
+}
+
+.story-section--section-five-video {
+    min-height: 100vh;
+    padding: 0;
+    align-items: stretch;
+    background: #ffffff;
+    position: relative;
+    z-index: 7;
+}
+
+.story-section--section-five-video::before {
+    display: none;
+}
+
+.section-shell--section-five {
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.section-five-stage {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #ffffff;
+    perspective: 2000px;
+    display: grid;
+    place-items: center;
+}
+
+.section-five-turn-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: none;
+    margin: 0;
+    color: rgba(15, 16, 18, 0.96);
+    font-family: "IBM Plex Mono", "SFMono-Regular", "Menlo", monospace;
+    font-size: clamp(1.4rem, 3.2vw, 3.6rem);
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+    white-space: nowrap;
+    transform-origin: 50% 50%;
+    opacity: 0;
+    z-index: 3;
+    pointer-events: none;
+    will-change: transform, opacity;
+}
+
+.section-five-video-shell {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: min(32vw, 480px);
+    aspect-ratio: 4 / 3;
+    display: grid;
+    place-items: center;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.06)),
+        rgba(245, 245, 245, 0.92);
+    border-radius: 8px;
+    border: 2px solid rgba(15, 16, 18, 0.12);
+    box-shadow:
+        0 28px 90px rgba(0, 0, 0, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.55);
+    z-index: 2;
+    overflow: hidden;
+    will-change: transform, opacity;
+    opacity: 1;
+}
+
+.section-five-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: #e8e8e8;
+}
+
+.story-section--section-six-return {
+    min-height: 100vh;
+    margin-top: -100vh;
+    padding: 0;
+    align-items: stretch;
+    background: #f4f2ee;
+    position: relative;
+    z-index: 8;
+}
+
+.story-section--section-six-return::before {
+    display: none;
+}
+
+.section-shell--section-six {
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.section-six-stage {
+    position: sticky;
+    top: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 18% 24%, var(--color-bg-highlight), transparent 24%),
+        radial-gradient(circle at 78% 28%, var(--color-bg-accent), transparent 18%),
+        conic-gradient(from 180deg at 50% 50%, var(--color-bg) 0deg, var(--color-surface-2) 180deg, var(--color-bg) 360deg);
+    perspective: 2200px;
+}
+
+.section-six-video-proxy-shell,
+.section-six-tutorial-shell {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    will-change: transform, opacity, filter;
+}
+
+.section-six-video-proxy-shell {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 2;
+    background: #000;
+    pointer-events: none;
+}
+
+.section-six-video-proxy {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: #000;
+}
+
+.section-six-tutorial-shell {
+    width: min(94vw, 1380px);
+    min-height: min(88vh, 860px);
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    z-index: 3;
+}
+
+.section-six-tutorial-shell .tutorial-section,
+.section-six-tutorial-shell .tutorial-step,
+.section-six-tutorial-shell .tutorial-troubleshoot {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.section-six-tutorial-shell .tutorial-layout,
+.section-six-tutorial-shell .tutorial-column,
+.section-six-tutorial-shell .console-column,
+.section-six-tutorial-shell .console-window {
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+.section-six-tutorial-shell .tutorial-step.is-muted {
+    opacity: 0.56 !important;
+}
+
+.section-six-tutorial-shell .tutorial-step.is-active .code-snippet,
+.section-six-tutorial-shell .tutorial-step.is-active .code-snippet.output {
+    border-color: rgba(214, 29, 0, 0.22);
+    box-shadow: 0 0 0 1px rgba(214, 29, 0, 0.08), 0 18px 40px rgba(214, 29, 0, 0.08);
+}
+
+.tutorial-loop-button {
+    margin-top: 1.1rem;
+    padding: 0.8rem 1.15rem;
+    border-radius: 999px;
+    border: 1px solid rgba(214, 29, 0, 0.22);
+    background: rgba(255, 255, 255, 0.72);
+    color: rgba(20, 23, 25, 0.96);
+    font-size: 0.84rem;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+    transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.tutorial-loop-button:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.88);
+    border-color: rgba(214, 29, 0, 0.34);
 }
 
 .section-three-desk-shadow {
@@ -1071,8 +1297,8 @@ body.gsap-ready .tutorial-troubleshoot {
     filter: drop-shadow(0 18px 30px var(--color-shadow));
 }
 
-#knobSvg #knob > circle,
-#knobSvg #knob > ellipse {
+#knobSvg #knob>circle,
+#knobSvg #knob>ellipse {
     fill: rgba(18, 19, 20, 0.12);
 }
 
@@ -1130,11 +1356,9 @@ body.gsap-ready .tutorial-troubleshoot {
     padding: 0.85rem 1rem;
     background:
         linear-gradient(180deg, rgba(17, 20, 23, 0.96), rgba(25, 28, 31, 0.98)),
-        repeating-linear-gradient(
-            180deg,
+        repeating-linear-gradient(180deg,
             rgba(255, 255, 255, 0.04) 0 1px,
-            rgba(255, 255, 255, 0) 1px 4px
-        );
+            rgba(255, 255, 255, 0) 1px 4px);
     border: 1px solid rgba(255, 255, 255, 0.06);
     box-shadow:
         inset 0 2px 12px rgba(0, 0, 0, 0.55),
@@ -1272,11 +1496,11 @@ body.gsap-ready .tutorial-troubleshoot {
     border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: var(--color-accent);
 }
 
-input:checked + .slider::before {
+input:checked+.slider::before {
     transform: translateX(26px);
 }
 
@@ -1324,11 +1548,9 @@ body.chapter-two-transition .chapter-two__freeze {
 body.mode-light .status-screen {
     background:
         linear-gradient(180deg, rgba(235, 238, 240, 0.96), rgba(214, 219, 223, 0.98)),
-        repeating-linear-gradient(
-            180deg,
+        repeating-linear-gradient(180deg,
             rgba(33, 36, 38, 0.045) 0 1px,
-            rgba(33, 36, 38, 0) 1px 4px
-        );
+            rgba(33, 36, 38, 0) 1px 4px);
 }
 
 body.mode-light .status-copy {
@@ -1445,6 +1667,7 @@ body.mode-glitch {
 }
 
 @media (max-width: 1080px) {
+
     .story-section--lead,
     .story-section--relay {
         padding: 7rem 1.5rem 6rem;
@@ -1541,6 +1764,7 @@ body.mode-glitch {
 }
 
 @media (max-width: 720px) {
+
     .story-section--lead,
     .story-section--relay {
         padding: 6rem 1rem 5rem;
@@ -1627,6 +1851,7 @@ body.mode-glitch {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     .story-section--text .section-shell,
     .story-section--visual .section-shell {
         opacity: 1;

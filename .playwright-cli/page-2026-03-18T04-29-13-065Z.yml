@@ -1,0 +1,74 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: NOISE
+        - generic [ref=e6]: "0.14"
+      - generic [ref=e7]:
+        - generic [ref=e8]: FREQUENCY
+        - generic [ref=e9]: "0.0"
+      - generic [ref=e10]:
+        - generic [ref=e11]: FOCUS
+        - generic [ref=e12]: SHARP
+  - main [ref=e15]:
+    - region "The Blueprint" [ref=e16]:
+      - generic [ref=e17]:
+        - paragraph [ref=e18]: Signal Intake / Section 01
+        - heading "The Blueprint" [level=1] [ref=e19]
+        - paragraph [ref=e20]: "It opens like a lesson because that is how trust enters the room: one command, one expected result, one clean demonstration that the system is still willing to explain itself."
+        - paragraph [ref=e21]: Then the interface begins to misbehave. The tutorial remains visible, but the surface starts to shake loose from its own instructions.
+    - region "JavaScript" [ref=e23]:
+      - generic [ref=e24]:
+        - complementary:
+          - img
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - heading "JavaScript" [level=1] [ref=e27]
+            - heading "The Basics" [level=2] [ref=e28]
+            - generic [ref=e29]:
+              - heading "1.1 The Console" [level=3] [ref=e30]
+              - paragraph [ref=e31]: You’ll run one line of JavaScript and see text appear in the console. This is the fastest way to check that your code is actually running.
+            - generic [ref=e32]:
+              - heading "Step 1" [level=4] [ref=e33]
+              - paragraph [ref=e34]: "Type this in the editor and press Run:"
+              - generic [ref=e35]: console.log("Hello, world!");
+              - paragraph [ref=e36]: "You should see this in the console output:"
+              - generic [ref=e37]: Hello, world!
+            - generic [ref=e38]:
+              - paragraph [ref=e39]: "If you don’t see anything, try these checks:"
+              - list [ref=e40]:
+                - listitem [ref=e41]: Make sure you typed console.log exactly (spelling and dots matter).
+                - listitem [ref=e42]: "Make sure your text is inside quotes: \" \"."
+            - generic [ref=e43]:
+              - heading "Step 2" [level=4] [ref=e44]
+              - paragraph [ref=e45]: "Replace the text inside the quotes, then press Run again:"
+          - generic [ref=e47]:
+            - generic [ref=e51]: Console
+            - generic [ref=e52]:
+              - generic [ref=e55]: ">"
+              - generic [ref=e57]:
+                - generic [ref=e58]: Output
+                - generic [ref=e59]: "?"
+              - generic [ref=e60]:
+                - paragraph [ref=e61]: "> SYSTEM INITIALIZED"
+                - paragraph [ref=e62]: "> LOADING TUTORIAL..."
+        - region "The signal does not comfort.":
+          - generic:
+            - paragraph: Chapter 02 / Coming to Terms
+            - generic:
+              - heading "The signal does not comfort." [level=2]
+    - region "Section 03 visual scene" [ref=e64]:
+      - generic [ref=e67]:
+        - img "ChatGPT logo" [ref=e71]
+        - img [ref=e73]
+    - region "Section 04 character field" [ref=e77]:
+      - generic [ref=e79]:
+        - paragraph: I wish I was you.
+    - region "Section 05 video" [ref=e81]:
+      - generic [ref=e83]:
+        - paragraph: I wish I was you.
+    - region "This is the handoff point." [ref=e86]:
+      - generic [ref=e87]:
+        - paragraph [ref=e88]: Open Channel / Section 06
+        - heading "This is the handoff point." [level=2] [ref=e89]
+        - paragraph [ref=e90]: The page now has the sectioned structure it needs, but it still reads like a system in motion rather than a conventional chapter list. From here, new visual and text sections can slot in after Chapter 02 without breaking the existing language.

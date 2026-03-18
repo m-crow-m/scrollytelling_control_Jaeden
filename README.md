@@ -1,4 +1,4 @@
-# The Blueprint
+# What am I doing?
 
 An interactive scrollytelling webpage that uses a corrupted JavaScript tutorial as a metaphor for signal loss, breakdown, and forced clarity. The page starts as an instructional console lesson and gradually destabilizes into a controlled systems failure.
 

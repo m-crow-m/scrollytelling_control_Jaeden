@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const systemThemeQuery = window.matchMedia("(prefers-color-scheme: light)");
 
     const viewport = document.getElementById("viewport-content");
+    const backgroundLayer = document.getElementById("background-layer");
     const tutorialTextContainer = document.getElementById("tutorial-text-container");
     const tutorialLayout = document.querySelector(".tutorial-layout");
     const tutorialColumn = document.querySelector(".tutorial-column");
@@ -66,8 +67,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const sectionFourStage = sectionFourEntry?.querySelector(".section-four-stage");
     const sectionFourMatrix = document.getElementById("section-four-matrix");
     const sectionFourFocus = document.getElementById("section-four-focus");
+    const sectionFiveVisual = document.getElementById("relay-visual-b");
+    const sectionFiveStage = sectionFiveVisual?.querySelector(".section-five-stage");
+    const sectionFiveTurnText = document.getElementById("section-five-turn-text");
+    const sectionFiveVideoShell = document.getElementById("section-five-video-shell");
+    const sectionFiveVideo = document.getElementById("section-five-video");
+    const sectionSixVisual = document.getElementById("relay-text-b");
+    const sectionSixStage = sectionSixVisual?.querySelector(".section-six-stage");
+    const sectionSixVideoProxyShell = document.getElementById("section-six-video-proxy-shell");
+    const sectionSixVideoProxy = document.getElementById("section-six-video-proxy");
+    const sectionSixTutorialShell = document.getElementById("section-six-tutorial-shell");
     const revealSections = [...relayVisualSections, ...relayTextSections].filter(
-        (section) => section !== sectionThreeVisual && section !== sectionFourEntry
+        (section) =>
+            section !== sectionThreeVisual &&
+            section !== sectionFourEntry &&
+            section !== sectionFiveVisual &&
+            section !== sectionSixVisual
     );
     const sectionThreeStage = document.querySelector(".section-three-stage");
     const sectionThreeHeadPath = document.getElementById("section-three-head-path");
@@ -153,18 +168,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const textDriftSeeds = new Map();
     const textElements = tutorialTextContainer.querySelectorAll("h2, h3, h4, p, div.code-snippet, li");
 
-    let setNoiseOpacity = () => {};
-    let setGridOpacity = () => {};
-    let setHeaderOpacity = () => {};
-    let setJitterX = () => {};
-    let setJitterY = () => {};
-    let setTutorialFilter = () => {};
-    let setConsoleFilter = () => {};
-    let setMeterFilter = () => {};
-    let setHeaderFilter = () => {};
-    let setPanelFilter = () => {};
-    let setPanelY = () => {};
-    let setPanelOpacity = () => {};
+    let setNoiseOpacity = () => { };
+    let setGridOpacity = () => { };
+    let setHeaderOpacity = () => { };
+    let setJitterX = () => { };
+    let setJitterY = () => { };
+    let setTutorialFilter = () => { };
+    let setConsoleFilter = () => { };
+    let setMeterFilter = () => { };
+    let setHeaderFilter = () => { };
+    let setPanelFilter = () => { };
+    let setPanelY = () => { };
+    let setPanelOpacity = () => { };
 
     textElements.forEach((element) => {
         originalTexts.set(element, element.textContent);
@@ -300,28 +315,38 @@ document.addEventListener("DOMContentLoaded", () => {
             Math.max(0, columns - focusSentence.length),
             centeredFocusStartColumn + focusOffsetColumns
         );
-        const fillPhase = clamp(sectionFourProgress / 0.16, 0, 1);
-        const firstResolvePhase = clamp((sectionFourProgress - 0.16) / 0.14, 0, 1);
-        const firstDestabilizePhase = clamp((sectionFourProgress - 0.3) / 0.12, 0, 1);
-        const secondResolvePhase = clamp((sectionFourProgress - 0.42) / 0.12, 0, 1);
-        const secondHoldPhase = clamp((sectionFourProgress - 0.54) / 0.08, 0, 1);
-        const secondDestabilizePhase = clamp((sectionFourProgress - 0.62) / 0.08, 0, 1);
-        const thirdResolvePhase = clamp((sectionFourProgress - 0.7) / 0.12, 0, 1);
-        const thirdDestabilizePhase = clamp((sectionFourProgress - 0.82) / 0.06, 0, 1);
-        const fourthResolvePhase = clamp((sectionFourProgress - 0.88) / 0.06, 0, 1);
-        const isolatePhase = clamp((sectionFourProgress - 0.93) / 0.02, 0, 1);
-        const centerShiftRaw = clamp((sectionFourProgress - 0.945) / 0.045, 0, 1);
+        const fillPhase = clamp(sectionFourProgress / 0.10, 0, 1);
+        const firstResolvePhase = clamp((sectionFourProgress - 0.10) / 0.08, 0, 1);
+        const firstHoldPhase = clamp((sectionFourProgress - 0.18) / 0.08, 0, 1);
+        const firstDestabilizePhase = clamp((sectionFourProgress - 0.26) / 0.08, 0, 1);
+        const secondResolvePhase = clamp((sectionFourProgress - 0.34) / 0.08, 0, 1);
+        const secondHoldPhase = clamp((sectionFourProgress - 0.42) / 0.08, 0, 1);
+        const secondDestabilizePhase = clamp((sectionFourProgress - 0.50) / 0.08, 0, 1);
+        const thirdResolvePhase = clamp((sectionFourProgress - 0.58) / 0.08, 0, 1);
+        const thirdHoldPhase = clamp((sectionFourProgress - 0.66) / 0.08, 0, 1);
+        const thirdDestabilizePhase = clamp((sectionFourProgress - 0.74) / 0.08, 0, 1);
+        const fourthResolvePhase = clamp((sectionFourProgress - 0.82) / 0.07, 0, 1);
+        const isolatePhase = clamp((sectionFourProgress - 0.89) / 0.06, 0, 1);
+        const centerShiftRaw = clamp((sectionFourProgress - 0.93) / 0.055, 0, 1);
         const centerShiftPhase = centerShiftRaw * centerShiftRaw * (3 - (2 * centerShiftRaw));
-        const zoomPhase = clamp((sectionFourProgress - 0.99) / 0.01, 0, 1);
+        const overlayTakeoverPhase = clamp((sectionFourProgress - 0.95) / 0.002, 0, 1);
+        const overlayActive = overlayTakeoverPhase > 0;
+        const handoffPhase = clamp((sectionFourProgress - 0.984) / 0.01, 0, 1);
+        const zoomPhase = clamp((sectionFourProgress - 0.982) / 0.018, 0, 1);
+        const exitPhase = clamp((sectionFourProgress - 0.987) / 0.013, 0, 1);
+        const chaosIntensity = Math.max(
+            firstDestabilizePhase * (1 - secondResolvePhase),
+            secondDestabilizePhase * (1 - thirdResolvePhase),
+            thirdDestabilizePhase * (1 - fourthResolvePhase)
+        );
         const focusStartColumn = Math.round(
             initialFocusStartColumn + ((centeredFocusStartColumn - initialFocusStartColumn) * centerShiftPhase)
         );
         const focusEndColumn = focusStartColumn + focusSentence.length;
         const revealedCount = Math.max(0, Math.min(total, Math.floor(total * fillPhase)));
         const firstResolvedCount = Math.max(0, Math.min(total, Math.floor(total * firstResolvePhase)));
-        const secondResolvedCount = Math.max(0, Math.min(total, Math.floor(total * secondResolvePhase)));
-        const secondHeldCount = Math.max(0, Math.min(total, Math.floor(total * secondHoldPhase)));
         const firstDestabilizedCount = Math.max(0, Math.min(total, Math.floor(total * firstDestabilizePhase)));
+        const secondResolvedCount = Math.max(0, Math.min(total, Math.floor(total * secondResolvePhase)));
         const secondDestabilizedCount = Math.max(0, Math.min(total, Math.floor(total * secondDestabilizePhase)));
         const thirdResolvedCount = Math.max(0, Math.min(total, Math.floor(total * thirdResolvePhase)));
         const thirdDestabilizedCount = Math.max(0, Math.min(total, Math.floor(total * thirdDestabilizePhase)));
@@ -344,6 +369,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (index < revealedCount) {
                     if (firstResolvePhase < 1) {
                         output += index < firstResolvedCount ? firstMessageGlyph : randomGlyph;
+                    } else if (firstHoldPhase < 1) {
+                        output += firstMessageGlyph;
                     } else if (firstDestabilizePhase < 1) {
                         output += index < firstDestabilizedCount ? randomGlyph : firstMessageGlyph;
                     } else if (secondResolvePhase < 1) {
@@ -354,6 +381,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         output += index < secondDestabilizedCount ? randomGlyph : secondMessageGlyph;
                     } else if (thirdResolvePhase < 1) {
                         output += index < thirdResolvedCount ? thirdMessageGlyph : randomGlyph;
+                    } else if (thirdHoldPhase < 1) {
+                        output += thirdMessageGlyph;
                     } else if (thirdDestabilizePhase < 1) {
                         output += index < thirdDestabilizedCount ? randomGlyph : thirdMessageGlyph;
                     } else if (fourthResolvePhase < 1) {
@@ -361,7 +390,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     } else if (isolatePhase < 1) {
                         output += isFocusCell ? focusGlyph : (Math.random() < isolatePhase ? " " : fourthMessageGlyph);
                     } else {
-                        output += isFocusCell ? focusGlyph : " ";
+                        output += overlayActive ? " " : (isFocusCell ? focusGlyph : " ");
                     }
                 } else {
                     output += " ";
@@ -374,25 +403,59 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         sectionFourMatrix.textContent = output;
+        sectionFourMatrix.setAttribute("data-text", output);
+
+        const glitchScale = 1 + (chaosIntensity * 0.04);
+        const glitchBlur = chaosIntensity * 2;
+        const glitchTracking = (chaosIntensity * 0.8) + "em";
+        const glitchX = (Math.random() > 0.5 ? 1 : -1) * (Math.random() * chaosIntensity * 8) + "px";
+        const glitchY = (Math.random() > 0.5 ? 1 : -1) * (Math.random() * chaosIntensity * 4) + "px";
+        const glitchGhostOpacity = chaosIntensity > 0.02 ? Math.min(0.8, chaosIntensity * 0.95) : 0;
+
+        gsap.set(sectionFourMatrix, {
+            "--glitch-scale": glitchScale,
+            "--glitch-blur": `blur(${glitchBlur}px)`,
+            "--glitch-tracking": glitchTracking,
+            "--glitch-x": glitchX,
+            "--glitch-y": glitchY,
+            "--glitch-ghost-opacity": glitchGhostOpacity
+        });
 
         if (sectionFourFocus) {
             sectionFourFocus.textContent = focusSentence;
-            const zoomActive = zoomPhase > 0.001;
-            const matrixOpacity = zoomActive ? 0 : 1;
-            const focusOpacity = zoomActive ? 1 : 0;
+            const handoffEase = handoffPhase * handoffPhase * (3 - (2 * handoffPhase));
+            const exitEase = exitPhase * exitPhase * (3 - (2 * exitPhase));
+            const focusOpacity = overlayActive ? (1 - exitPhase) : 0;
             const sentenceWidth = focusSentence.length * characterWidth;
-            const focusCenterX = paddingLeft + (centeredFocusStartColumn * characterWidth) + (sentenceWidth / 2) + (characterWidth * 1.5);
+            const focusCenterX = paddingLeft + (focusStartColumn * characterWidth) + (sentenceWidth / 2);
             const focusCenterY = paddingTop + (focusRow * lineHeight) + (lineHeight / 2);
             sectionFourFocus.style.left = `${focusCenterX}px`;
             sectionFourFocus.style.top = `${focusCenterY}px`;
             sectionFourFocus.style.fontSize = `${fontSize}px`;
             sectionFourFocus.style.lineHeight = `${lineHeight}px`;
-            const measuredWidth = sectionFourFocus.getBoundingClientRect().width || sentenceWidth;
-            const targetScale = Math.max(1, Math.min(8, (window.innerWidth * 0.92) / measuredWidth));
-            const focusScale = 1 + ((targetScale - 1) * zoomPhase);
-            sectionFourMatrix.style.opacity = String(matrixOpacity);
-            sectionFourFocus.style.opacity = String(focusOpacity);
-            sectionFourFocus.style.transform = `translate(-50%, -50%) scale(${focusScale})`;
+
+            if (sectionFourProgress < 1) {
+                const measuredWidth = sectionFourFocus.getBoundingClientRect().width || sentenceWidth;
+                const targetScale = Math.max(1, Math.min(8, (window.innerWidth * 0.92) / measuredWidth));
+                const focusScale = 1 + ((targetScale - 1) * zoomPhase);
+
+                gsap.set(sectionFourFocus, {
+                    opacity: focusOpacity,
+                    scale: focusScale,
+                    xPercent: -50,
+                    yPercent: -50,
+                    x: -window.innerWidth * 0.78 * exitEase,
+                    rotationY: -52 * exitEase,
+                    rotationX: 8 * exitEase,
+                    skewY: -7 * exitEase,
+                    scaleX: focusScale * (1 - (0.2 * exitEase)),
+                    scaleY: focusScale * (1 + (0.04 * exitEase)),
+                    filter: `blur(${exitEase * 1.4}px)`,
+                    transformPerspective: 1600,
+                    transformOrigin: "50% 50%"
+                });
+                gsap.set(sectionFourMatrix, { opacity: 1 });
+            }
         }
     }
 
@@ -686,8 +749,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function updateControlPanel() {
-        setPanelY(scrollProgress > 0.08 ? 0 : 150);
-        setPanelOpacity(scrollProgress > 0.08 ? 1 : 0.9);
+        const panelVisible = scrollProgress > 0.08 && scrollProgress < chapterTwoStart;
+        setPanelY(panelVisible ? 0 : 150);
+        setPanelOpacity(panelVisible ? 1 : 0);
+        gsap.set(controlPanel, {
+            autoAlpha: panelVisible ? 1 : 0,
+            pointerEvents: panelVisible ? "auto" : "none"
+        });
     }
 
     function updateKnobRotation(progress) {
@@ -731,6 +799,113 @@ document.addEventListener("DOMContentLoaded", () => {
             root.style.animation = "none";
             root.style.willChange = "auto";
         }
+    }
+
+    function buildSectionSixTutorialReturn() {
+        if (!sectionSixTutorialShell || !tutorialLayout) return;
+
+        sectionSixTutorialShell.innerHTML = "";
+
+        const layoutClone = tutorialLayout.cloneNode(true);
+        stripSnapshotIds(layoutClone);
+        sanitizeSnapshotClone(layoutClone);
+
+        const title = layoutClone.querySelector("h1");
+        const subtitle = layoutClone.querySelector("h2");
+        const tutorialSection = layoutClone.querySelector(".tutorial-section");
+        const tutorialSteps = Array.from(layoutClone.querySelectorAll(".tutorial-step"));
+        const troubleshoot = layoutClone.querySelector(".tutorial-troubleshoot");
+        const consoleTitle = layoutClone.querySelector(".console-title");
+        const inputText = layoutClone.querySelector(".input-text");
+        const cursor = layoutClone.querySelector(".cursor");
+        const outputArea = layoutClone.querySelector(".console-output-area");
+
+        if (title) title.textContent = "JavaScript";
+        if (subtitle) subtitle.textContent = "Variables";
+
+        if (tutorialSection) {
+            const sectionHeading = tutorialSection.querySelector("h3");
+            const sectionBody = tutorialSection.querySelector("p");
+            if (sectionHeading) sectionHeading.textContent = "1.2 Variables";
+            if (sectionBody) {
+                sectionBody.textContent =
+                    "Variables store values so the same program can shift meaning without rewriting every line.";
+            }
+        }
+
+        if (tutorialSteps[0]) {
+            tutorialSteps[0].classList.add("is-muted");
+            const stepHeading = tutorialSteps[0].querySelector("h4");
+            const paragraphs = tutorialSteps[0].querySelectorAll("p");
+            const snippets = tutorialSteps[0].querySelectorAll(".code-snippet");
+            if (stepHeading) stepHeading.textContent = "Step 1";
+            if (paragraphs[0]) paragraphs[0].textContent = "Create a variable and store a phrase in it:";
+            if (paragraphs[1]) paragraphs[1].textContent = "You should see this in the console output:";
+            if (snippets[0]) snippets[0].textContent = 'let message = "I wish I was you.";';
+            if (snippets[1]) snippets[1].textContent = "undefined";
+        }
+
+        if (troubleshoot) {
+            const troubleshootLead = troubleshoot.querySelector("p");
+            const troubleshootItems = troubleshoot.querySelectorAll("li");
+            if (troubleshootLead) {
+                troubleshootLead.innerHTML = "<strong>If it breaks, check these:</strong>";
+            }
+            if (troubleshootItems[0]) {
+                troubleshootItems[0].innerHTML =
+                    "Make sure the variable name matches exactly every time you use it.";
+            }
+            if (troubleshootItems[1]) {
+                troubleshootItems[1].innerHTML =
+                    "Keep the text inside quotes so JavaScript reads it as a string.";
+            }
+        }
+
+        if (tutorialSteps[1]) {
+            tutorialSteps[1].classList.add("is-active");
+            const stepHeading = tutorialSteps[1].querySelector("h4");
+            const stepBody = tutorialSteps[1].querySelector("p");
+            if (stepHeading) stepHeading.textContent = "Step 2";
+            if (stepBody) stepBody.textContent = "Log the variable to the console, then press Run again:";
+
+            const newSnippet = document.createElement("div");
+            newSnippet.className = "code-snippet";
+            newSnippet.textContent = "console.log(message);";
+            tutorialSteps[1].appendChild(newSnippet);
+
+            const newOutputLead = document.createElement("p");
+            newOutputLead.textContent = "The console should print the saved text:";
+            tutorialSteps[1].appendChild(newOutputLead);
+
+            const newOutput = document.createElement("div");
+            newOutput.className = "code-snippet output";
+            newOutput.textContent = "I wish I was you.";
+            tutorialSteps[1].appendChild(newOutput);
+
+            const loopButton = document.createElement("button");
+            loopButton.type = "button";
+            loopButton.className = "tutorial-loop-button pixel-font";
+            loopButton.textContent = "Continue";
+            loopButton.addEventListener("click", () => {
+                window.scrollTo({
+                    top: showpieceSection ? showpieceSection.offsetTop : 0,
+                    behavior: "smooth"
+                });
+            });
+            tutorialSteps[1].appendChild(loopButton);
+        }
+
+        if (consoleTitle) consoleTitle.textContent = "Console";
+        if (inputText) inputText.textContent = 'let message = "I wish I was you.";';
+        if (cursor) cursor.remove();
+        if (outputArea) {
+            outputArea.innerHTML = [
+                '<div class="output-line">&gt; console.log(message);</div>',
+                '<div class="output-line">I wish I was you.</div>'
+            ].join("");
+        }
+
+        sectionSixTutorialShell.append(layoutClone);
     }
 
     function buildSnapshotSurface(offsetX = 0, offsetY = 0) {
@@ -1242,27 +1417,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function createSectionReveals() {
-        gsap.from(".section-shell--lead", {
-            opacity: 0,
-            y: 40,
-            duration: 0.9,
-            ease: "power3.out",
-            scrollTrigger: {
-                trigger: leadSection,
-                start: "top 75%"
-            }
-        });
-
-        gsap.from(controlPanel, {
-            autoAlpha: 0,
-            y: 80,
-            duration: 0.65,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: showpieceSection,
-                start: "top 80%"
-            }
-        });
+        if (leadSection) {
+            gsap.from(".section-shell--lead", {
+                opacity: 0,
+                y: 40,
+                duration: 0.9,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: leadSection,
+                    start: "top 75%"
+                }
+            });
+        }
 
         revealSections.forEach((section) => {
             const shell = section.querySelector(".section-shell");
@@ -1371,7 +1537,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ScrollTrigger.create({
                 trigger: sectionFourEntry,
                 start: "top top",
-                end: "+=860%",
+                end: "+=1780%",
                 pin: sectionFourEntry,
                 scrub: 1,
                 anticipatePin: 1,
@@ -1396,6 +1562,205 @@ document.addEventListener("DOMContentLoaded", () => {
                     renderSectionFourField();
                 }
             });
+        }
+
+        const sectionFiveVisual = document.getElementById("relay-visual-b");
+        const sectionFiveTurnText = document.getElementById("section-five-turn-text");
+        const theVideoShell = document.getElementById("section-five-video-shell");
+        const theVideo = document.getElementById("section-five-video");
+
+        if (sectionFiveVisual && sectionFiveTurnText && theVideoShell && theVideo) {
+            const sectionFiveVideoStart = () => window.innerWidth * 1.2;
+
+            gsap.set(sectionFiveTurnText, {
+                opacity: 0,
+                xPercent: -50,
+                yPercent: -50,
+                x: 0,
+                rotationY: 0,
+                scale: 1,
+                transformOrigin: "50% 50%"
+            });
+
+            gsap.set(theVideoShell, {
+                xPercent: -50,
+                yPercent: -50,
+                x: sectionFiveVideoStart(),
+                rotationY: -45,
+                rotationX: 10,
+                z: -300,
+                transformPerspective: 1600,
+                transformOrigin: "left center",
+                opacity: 1,
+                zIndex: 10
+            });
+
+            theVideo.muted = true;
+            theVideo.loop = true;
+            theVideo.autoplay = true;
+            theVideo.playsInline = true;
+            theVideo.removeAttribute("controls");
+
+            const transitionTimeline = gsap.timeline({
+                scrollTrigger: {
+                    trigger: sectionFiveVisual,
+                    start: "top top",
+                    end: "+=250%",
+                    scrub: 1,
+                    pin: true,
+                    anticipatePin: 1,
+                    invalidateOnRefresh: true,
+                    onEnter: () => theVideo.play().catch(() => { }),
+                    onEnterBack: () => theVideo.play().catch(() => { })
+                }
+            });
+
+            transitionTimeline.to(theVideoShell, {
+                x: 0,
+                rotationY: 0,
+                rotationX: 0,
+                z: 0,
+                duration: 0.8,
+                ease: "power2.out"
+            }, 0.1)
+                .to(theVideoShell, {
+                    width: "100%",
+                    height: "100vh",
+                    borderRadius: "0px",
+                    border: "none",
+                    duration: 0.8,
+                    ease: "power1.inOut"
+                }, 1.0);
+        }
+
+        if (sectionFourEntry) {
+            const hideWhitePhaseChrome = () => {
+                gsap.set(header, { autoAlpha: 0 });
+                gsap.set(gridOverlay, { autoAlpha: 0 });
+                gsap.set(noiseCanvas, { autoAlpha: 0 });
+                if (backgroundLayer) {
+                    gsap.set(backgroundLayer, { autoAlpha: 0 });
+                }
+            };
+            const showWhitePhaseChrome = () => {
+                gsap.set(header, { autoAlpha: 1 });
+                if (backgroundLayer) {
+                    gsap.set(backgroundLayer, { autoAlpha: 1 });
+                }
+            };
+
+            ScrollTrigger.create({
+                trigger: sectionFourEntry,
+                start: "top top",
+                endTrigger: sectionSixVisual || sectionFiveVisual || sectionFourEntry,
+                end: "bottom bottom",
+                onEnter: hideWhitePhaseChrome,
+                onEnterBack: hideWhitePhaseChrome,
+                onLeaveBack: showWhitePhaseChrome
+            });
+        }
+
+        if (sectionSixVisual && sectionSixStage && sectionSixVideoProxyShell && sectionSixVideoProxy && sectionSixTutorialShell) {
+            gsap.set(sectionSixVisual, { autoAlpha: 0 });
+            gsap.set(sectionSixVisual.querySelector(".section-shell"), { opacity: 1, y: 0 });
+            gsap.set(sectionSixVideoProxyShell, {
+                xPercent: -50,
+                yPercent: -50,
+                x: 0,
+                y: 0,
+                rotationY: 0,
+                rotationX: 0,
+                z: 0,
+                scale: 1,
+                opacity: 1,
+                transformPerspective: 2200,
+                transformOrigin: "center center"
+            });
+            gsap.set(sectionSixVideoProxy, {
+                filter: "invert(0) contrast(1) saturate(1) brightness(1)"
+            });
+            gsap.set(sectionSixTutorialShell, {
+                xPercent: -50,
+                yPercent: -50,
+                x: window.innerWidth * 1.1,
+                y: 0,
+                rotationY: -54,
+                rotationX: 8,
+                z: -320,
+                scale: 0.92,
+                opacity: 1,
+                transformPerspective: 2200,
+                transformOrigin: "right center"
+            });
+
+            sectionSixVideoProxy.muted = true;
+            sectionSixVideoProxy.loop = true;
+            sectionSixVideoProxy.autoplay = true;
+            sectionSixVideoProxy.playsInline = true;
+            sectionSixVideoProxy.removeAttribute("controls");
+
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: sectionSixVisual,
+                    start: "top top",
+                    end: "+=380%",
+                    scrub: 1,
+                    pin: true,
+                    anticipatePin: 1,
+                    invalidateOnRefresh: true,
+                    onEnter: () => {
+                        gsap.set(sectionSixVisual, { autoAlpha: 1 });
+                        sectionSixVideoProxy.play().catch(() => { });
+                    },
+                    onEnterBack: () => {
+                        gsap.set(sectionSixVisual, { autoAlpha: 1 });
+                        sectionSixVideoProxy.play().catch(() => { });
+                    },
+                    onLeaveBack: () => {
+                        gsap.set(sectionSixVisual, { autoAlpha: 0 });
+                    },
+                    onRefresh: (self) => {
+                        gsap.set(sectionSixVisual, { autoAlpha: self.progress > 0 ? 1 : 0 });
+                    }
+                }
+            })
+                .to(sectionSixVideoProxyShell, {
+                    x: 0,
+                    rotationY: 0,
+                    rotationX: 0,
+                    z: 0,
+                    scale: 1,
+                    duration: 0.34,
+                    ease: "none"
+                }, 0)
+                .to(sectionSixVideoProxy, {
+                    filter: "invert(1) contrast(1.32) saturate(0.8) brightness(1.1)",
+                    duration: 0.14,
+                    ease: "none"
+                }, 0.34)
+                .to(sectionSixVideoProxyShell, {
+                    x: -window.innerWidth * 1.06,
+                    rotationY: 56,
+                    rotationX: -7,
+                    z: -260,
+                    scale: 0.92,
+                    duration: 0.62,
+                    ease: "none"
+                }, 0.38)
+                .to(sectionSixVideoProxyShell, {
+                    opacity: 0,
+                    duration: 0.42,
+                    ease: "none"
+                }, 0.58)
+                .to(sectionSixTutorialShell, {
+                    x: 0,
+                    rotationY: 0,
+                    rotationX: 0,
+                    z: 0,
+                    scale: 1,
+                    duration: 0.62,
+                    ease: "none"
+                }, 0.38);
         }
 
         relayVisualSections.forEach((section) => {
@@ -1548,11 +1913,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     buildRfMeter();
+    buildSectionSixTutorialReturn();
     styleStatusDisplay();
     logToConsole("> SYSTEM INITIALIZED");
     logToConsole("> LOADING TUTORIAL...");
     gsap.set(knob, { svgOrigin: "742 530", transformOrigin: "50% 50%" });
-    gsap.set(controlPanel, { xPercent: -50, yPercent: 150, opacity: 0.9 });
+    gsap.set(controlPanel, { xPercent: -50, yPercent: 150, autoAlpha: 0, pointerEvents: "none" });
     gsap.set(tutorialLayout, { x: 0, y: 0 });
     gsap.set(tutorialColumn, { filter: "blur(0px)" });
     gsap.set(consoleWindow, { filter: "blur(0px)" });
@@ -1617,6 +1983,13 @@ document.addEventListener("DOMContentLoaded", () => {
     renderNoise();
     runIntroSequence();
     createShowpieceTimeline();
+    ScrollTrigger.create({
+        start: () => (showpieceTrigger ? showpieceTrigger.end + 1 : showpieceSection.offsetTop + window.innerHeight),
+        end: "max",
+        onEnter: () => setModeClass("dark"),
+        onEnterBack: () => setModeClass("dark"),
+        onLeaveBack: () => applyThemeChoice(themeChoice)
+    });
     createSectionReveals();
 
     window.addEventListener("resize", () => {
